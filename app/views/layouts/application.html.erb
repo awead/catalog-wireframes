@@ -5,10 +5,25 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<%= yield %>
+  <div class="navbar">
+    <div class="navbar-inner">
+      <a class="brand" href="#">Logo</a>
+      <p>Rock and Roll Hall of Fame</p>
+      <p>Library + Archives</p>
+    </div>
+  </div>
+
+  <%= yield %>
+
+  <div class="row-fluid">
+    <div class="span12">
+      Rock and Roll Hall of Fame and Museum | Library and Archives | 2809 Woodland Ave. | Cleveland, OH 44115 | 216.515.1960 | library@rockhall.org
+    <div>
+  </div>
 
 </body>
 </html>
