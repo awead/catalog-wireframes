@@ -1,5 +1,22 @@
-// Place all the styles related to the catalog controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$navbarBackground: #1f0101;
+$navbarBackgroundHighlight: #590000;
+$navbarHeight: 40px;
+
 @import "bootstrap";
 @import "bootstrap-responsive";
+
+.navbar-top {
+  background-color: #CCC;
+  background-image: image-url("navbar_swatch.png");
+  border-bottom-color: #000;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+
+.navbar-title {
+  color: white;
+  font-size: 40px;
+  line-height: 40px;
+  padding: 12px 0px 12px 0px;
+}
