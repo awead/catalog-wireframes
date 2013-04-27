@@ -3,12 +3,16 @@ $navbarBackgroundHighlight: #590000;
 $navbarHeight: 40px;
 $linkColor: #ac1313;
 $linkColorHover: #7d0e0e;
+$navbarText: #ffffff;
+$navbarLinkColor: #ffffff;
+$navbarLinkColorHover: #cccccc;
+$navbarLinkBackgroundHover: #590000;
 
 @import "bootstrap";
 @import "bootstrap-responsive";
 
 .navbar-top {
-  background-color: #CCC;
+  background-color: #cccccc;
   background-image: image-url("navbar_swatch.png");
   border-bottom-color: $navbarBackground;
   border-bottom-style: solid;
@@ -23,5 +27,5 @@ $linkColorHover: #7d0e0e;
 }
 
 .carousel-inner {
-  background: #BBB;
+  background: #bbb;
 }
