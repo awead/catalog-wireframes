@@ -1,3 +1,17 @@
+<div class="navbar navbar-static-top">
+  <div class="navbar-top">
+    <div class="container">
+      <%= image_tag "logo.png", :size => "75x49", :class => "brand" %>
+      <div class="navbar-title hidden-phone">Rock and Roll Hall of Fame Library + Archives</div>
+    </div>
+  </div>
+</div>
+
+<div class="hidden">
+  <%= link_to "next", "/catalog/results", {:id => "next-wireframe"} %>
+</div>
+
+<div class="main">
 <div id="myCarousel" class="carousel slide">
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -83,4 +97,3 @@
     <%= link_to "Events" %><br/>
   </div>
 </div>
-
