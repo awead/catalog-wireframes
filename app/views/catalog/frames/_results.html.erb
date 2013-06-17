@@ -47,8 +47,55 @@
     <h1>Facets</h1>
   </div>
 
-  <div class="well span8">
-    <h1>Search results</h1>
+  <div class="span8">
+
+    <!-- controls -->
+    <div class="well">
+      <div class="pagination pagination-centered">
+        <ul>
+          <li><a href="#">Prev</a></li>
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><a href="#">Next</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <!-- listing of search results -->
+    <div class="media">
+      <a class="pull-left" href="#">
+        <%= image_tag "64x64.png", :class => "media-object" %>
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">1. First Result</h4>
+        <dl class="dl-horizontal">
+          <dt>Title:</dt>
+          <dd>First Result</dd>
+          <dt>Call Number:</dt>
+          <dd>ML 200 .C45 A6</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="media">
+      <a class="pull-left" href="#">
+        <%= image_tag "64x64.png", :class => "media-object" %>
+      </a>
+      <div class="media-body">
+        <h4 class="media-heading">2. Second Result</h4>
+        <dl class="dl-horizontal">
+          <dt>Title:</dt>
+          <dd>Second Result</dd>
+          <dt>Call Number:</dt>
+          <dd>ML 200 .C45 B6</dd>
+        </dl> 
+      </div>
+    </div>    
+
+
   </div>
 
 </div>
