@@ -8,7 +8,7 @@
   <div class="navbar-inner">
     <div class="container-fluid">
       <form class="navbar-search form-inline pull-left">
-      <input type="text" class="search-query" placeholder="Search in">
+      <input type="text" class="search-query" value="Elvis">
       <select class="span2">
         <option>All fields</option>
         <option>Title</option>
@@ -50,8 +50,22 @@
   <div class="span8">
 
     <!-- controls -->
-    <div class="well">
-      <div class="pagination pagination-centered">
+    <div class="row-fluid">
+      <div class="span3">
+        <span>Sorted by</span>
+          <div class="dropdown inline">
+          <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+            <span class="primary">Relevance<b class="caret"></b></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Relevance</a></li>
+            <li><a href="#">Author</a></li>
+            <li><a href="#">Title</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="span6 pagination pagination-centered">
+        Displaying items 1 - 10 of 717 
         <ul>
           <li><a href="#">Prev</a></li>
           <li class="active"><a href="#">1</a></li>
@@ -61,6 +75,16 @@
           <li><a href="#">5</a></li>
           <li><a href="#">Next</a></li>
         </ul>
+      </div>
+      <div class="span3 pull-right">
+        <form class="form-inline">
+          <select class="span4">
+            <option>10</option>
+            <option>20</option>
+            <option>50</option>
+          </select>
+          results per page
+        </form>
       </div>
     </div>
   
