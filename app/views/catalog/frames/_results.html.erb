@@ -25,7 +25,16 @@
       </button>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li><a href="#">Login</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Bookmark all</a></li>
+              <li><a href="#">View bookmarkds</a></li>
+              <li><a href="#">Manage my account</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Logout</a></li>
+            </ul>
+          </li>
           <li><a href="#">Search History</a></li>
           <li><a href="#">Start Over</a></li>
         </ul>
@@ -48,6 +57,15 @@
   </div>
 
   <div class="span8">
+
+    <div class="row-fluid tooltips">
+      <div class="well">
+        <h4>
+          <a href="#" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Click to remove different terms from your existing search">Search Terms</a>
+        </h4>
+      <a href="#" class="btn btn-medium"><i class="icon-remove-sign"></i> Elvis</a>
+    </div>
+    </div>
 
     <!-- controls -->
     <div class="row-fluid">
@@ -116,7 +134,9 @@
         </div>
       </div>
       <div class="span2">
-        Bookmarks
+        <label class="checkbox">
+          <input type="checkbox"> Bookmark
+        </label>
       </div>
     </div>    
 
@@ -143,7 +163,9 @@
         </div>
       </div>
       <div class="span2">
-        Bookmarks
+        <label class="checkbox">
+          <input type="checkbox"> Bookmark
+        </label>
       </div>
     </div>
 
@@ -169,7 +191,9 @@
         </div>
       </div>
       <div class="span2">
-        Bookmarks
+        <label class="checkbox">
+          <input type="checkbox"> Bookmark
+        </label>
       </div>
     </div>  
 
@@ -193,7 +217,9 @@
         </div>
       </div>
       <div class="span2">
-        Bookmarks
+        <label class="checkbox">
+          <input type="checkbox"> Bookmark
+        </label>
       </div>
     </div>  
 

@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+
+!function ($) {
+
+  $(function(){
+    $('.tooltips').tooltip({
+      selector: "a[data-toggle=tooltip]"
+    })
+  })
+
+}(window.jQuery)
