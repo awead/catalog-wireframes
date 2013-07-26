@@ -5,52 +5,84 @@
   <%= link_to "previous", "/catalog/results", {:id => "previous-wireframe"} %>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="main">
 <div class="row-fluid">
-  
-  <div class="span4">
-    book cover from google, if available
-  </div>
 
-  <div class="span8">
-
-    <!-- Title header row -->
-    <div class="row-fluid">
-      <div class="span9">
-        <h4>Everything Elvis / Pauline Bartel</h4>
-        <span class="badge badge-warning">Checked out</span>
-      </div>
-      <div class="span3">
-        <label class="checkbox">
-          <input type="checkbox"> Bookmark
-        </label>
-      </div>
-    </div>
-
-    <!-- record display row -->
-    <div class="row-fluid">
-      <div class="span9">
-         <dl class="dl-horizontal">
-           <dt>Title:</dt>
-           <dd>Everything Elvis / Pauline Bartel</dd>
-           <dt>Author:</dt>
-           <dd><a href="#">Bartel, Pauline C</a></dd>
-           <dt>Format:</dt>
-           <dd>Book</dd>
-           <dt>Call Number:</dt>
-           <dd>
-             ML420.P747 B378 1995<br/>
-             ML420.P747 B378E9 1995
-           </dd>
-         </dl>
-      </div>
-      <div class="span3">
-        <h4>Holdings</h4>
+  <!-- Record controls -->
+  <div class="row-fluid">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container-fluid pull-left">
+          <ul class="nav">
+            <li><a href="#" class="nav">Print</a></li>
+            <li><a href="#" class="nav">Email</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Export <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">to Refworks</a></li>
+                <li><a href="#">to Endnote</a></li>
+                <li><a href="#">to citation</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="container-fluid pull-right">
+          <div class="navbar-text">
+             <%= link_to "« Previous" %> | 2 of 370 | <%= link_to "Next »" %>
+          </div>
+        </div>
       </div>
     </div>
-  
+    
   </div>
 
+  <!-- Record display row -->
+  <div class="row-fluid">
+    <div class="span6">
+      <h4>Everything Elvis / Pauline Bartel</h4>
+      <label class="checkbox"><input type="checkbox"> Bookmark </label>
+      <dl class="dl-horizontal">
+        <dt>Title:</dt>
+        <dd>Everything Elvis / Pauline Bartel</dd>
+        <dt>Additional Titles:</dt>
+        <dd>Elvis</dd>           
+        <dt>Author:</dt>
+        <dd><a href="#">Bartel, Pauline C</a></dd>
+        <dt>Format:</dt>
+        <dd>Book</dd>
+        <dt>Physical Details:</dt>
+        <dd>172 p. : ill. ; 26 cm</dd>
+        <dt>Subjects:</dt>
+        <dd>
+          <%= link_to "Presley, Elvis, 1935-1977", "#" %><br/>
+          <%= link_to "Presley, Elvis, 1935-1977" %>--<%= link_to "Collectibles" %><br/>
+          <%= link_to "Inductee", "#" %>
+        </dd>
+        <dt>Publisher:</dt>
+        <dd>Dallas, Tex. : Taylor Pub. Co., c1995</dd>
+        <dt>Call Number:</dt>
+        <dd>
+          ML420.P747 B378 1995<br/>
+          ML420.P747 B378E9 1995
+        </dd>
+        <dt>ISBN:
+        <dd>
+          0878338780<br/>
+          9780878338788
+        </dd>
+        <dt>OCLC No.:</dt>
+        <dd>31518608</dd>
+        <dt>Notes:</dt>
+        <dd>Sourcebook to Elvis memorabilia, souvenirs and collectibles</dd>
+       </dl>
+    </div>
+
+    <div class="span6 well">
+      <span class="badge badge-warning">Checked out</span>
+      <!-- https://www.googleapis.com/books/v1/volumes?q=isbn:0878338780 -->
+      <img src="http://bks2.books.google.com/books?id=gxYsVYxeaWIC&printsec=frontcover&img=1&zoom=1&source=gbs_api"/>
+    </div>
+  </div>
 
 </div>
 </div>

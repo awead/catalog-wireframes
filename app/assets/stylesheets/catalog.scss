@@ -1,22 +1,28 @@
-$navbarBackground: #1f0101;
-$navbarBackgroundHighlight: #590000;
+$navbarInverseBackground: #1f0101;
+$navbarInverseBackgroundHighlight: #590000;
 $navbarHeight: 40px;
 $linkColor: #ac1313;
 $linkColorHover: #7d0e0e;
-$navbarText: #ffffff;
-$navbarLinkColor: #ffffff;
-$navbarLinkColorHover: #cccccc;
-$navbarLinkBackgroundHover: #590000;
+//$navbarText: #ffffff;
+//$navbarLinkColor: #ffffff;
+//$navbarLinkColorHover: #cccccc;
+$navbarInverseLinkBackgroundHover: #590000;
 
 @import "bootstrap";
 @import "bootstrap-responsive";
 
-.navbar-top {
-  background-color: #cccccc;
-  background-image: image-url("navbar_swatch.png");
-  border-bottom-color: $navbarBackground;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
+#main {
+  padding: 10px;
+}
+
+.navbar-inverse { 
+  .navbar-top {
+    background-color: #cccccc;
+    background-image: image-url("navbar_swatch.png");
+    border-bottom-color: $navbarInverseBackground;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+  }
 }
 
 .navbar-title {
