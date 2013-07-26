@@ -1,51 +1,7 @@
-<div class="navbar navbar-static-top">
-  <div class="navbar-top">
-    <div class="container-fluid">
-      <%= image_tag "logo.png", :size => "75x49", :class => "brand" %>
-      <div class="navbar-title hidden-phone">Rock and Roll Hall of Fame Library + Archives</div>
-    </div>
-  </div>
-  <div class="navbar-inner">
-    <div class="container-fluid">
-      <form class="navbar-search form-inline pull-left">
-      <input type="text" class="search-query" value="Elvis">
-      <select class="span2">
-        <option>All fields</option>
-        <option>Title</option>
-        <option>Author</option>
-        <option>Keyword</option>
-        <option>Call number</option>
-      </select>
-      </form>
-      <div class="container-fluid">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Bookmark all</a></li>
-              <li><a href="#">View bookmarkds</a></li>
-              <li><a href="#">Manage my account</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Logout</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Search History</a></li>
-          <li><a href="#">Start Over</a></li>
-        </ul>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render :partial => "/catalog/partials/navbar_loggedin" %>
 
 <div class="hidden">
-  <%= link_to "next", "/catalog/results", {:id => "next-wireframe"} %>
+  <%= link_to "next", "/catalog/book", {:id => "next-wireframe"} %>
   <%= link_to "previous", "/catalog", {:id => "previous-wireframe"} %>
 </div>
 
@@ -58,6 +14,7 @@
 
   <div class="span8">
 
+    <!-- search terms -->
     <div class="row-fluid tooltips">
       <div class="well">
         <h4>
@@ -67,7 +24,7 @@
     </div>
     </div>
 
-    <!-- controls -->
+    <!-- pagination, sorting and relevance -->
     <div class="row-fluid">
       <div class="span3">
         <span>Sorted by</span>

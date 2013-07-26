@@ -1,0 +1,56 @@
+<%= render :partial => "/catalog/partials/navbar_loggedin" %>
+
+<div class="hidden">
+  <%= link_to "next", "/catalog/finding_aid", {:id => "next-wireframe"} %>
+  <%= link_to "previous", "/catalog/results", {:id => "previous-wireframe"} %>
+</div>
+
+<div class="container-fluid">
+<div class="row-fluid">
+  
+  <div class="span4">
+    book cover from google, if available
+  </div>
+
+  <div class="span8">
+
+    <!-- Title header row -->
+    <div class="row-fluid">
+      <div class="span9">
+        <h4>Everything Elvis / Pauline Bartel</h4>
+        <span class="badge badge-warning">Checked out</span>
+      </div>
+      <div class="span3">
+        <label class="checkbox">
+          <input type="checkbox"> Bookmark
+        </label>
+      </div>
+    </div>
+
+    <!-- record display row -->
+    <div class="row-fluid">
+      <div class="span9">
+         <dl class="dl-horizontal">
+           <dt>Title:</dt>
+           <dd>Everything Elvis / Pauline Bartel</dd>
+           <dt>Author:</dt>
+           <dd><a href="#">Bartel, Pauline C</a></dd>
+           <dt>Format:</dt>
+           <dd>Book</dd>
+           <dt>Call Number:</dt>
+           <dd>
+             ML420.P747 B378 1995<br/>
+             ML420.P747 B378E9 1995
+           </dd>
+         </dl>
+      </div>
+      <div class="span3">
+        <h4>Holdings</h4>
+      </div>
+    </div>
+  
+  </div>
+
+
+</div>
+</div>
