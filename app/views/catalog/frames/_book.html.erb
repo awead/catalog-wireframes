@@ -14,10 +14,10 @@
       <div class="navbar-inner">
         <div class="container-fluid pull-left">
           <ul class="nav">
-            <li><a href="#" class="nav">Print</a></li>
-            <li><a href="#" class="nav">Email</a></li>
+            <li><a href="#" class="nav"><i class="icon-print"></i> Print</a></li>
+            <li><a href="#" class="nav"><i class="icon-envelope"></i> Email</a></li>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Export <b class="caret"></b></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-share"></i> Export <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">to Refworks</a></li>
                 <li><a href="#">to Endnote</a></li>
@@ -27,9 +27,11 @@
           </ul>
         </div>
         <div class="container-fluid pull-right">
-          <div class="navbar-text">
-             <%= link_to "« Previous" %> | 2 of 370 | <%= link_to "Next »" %>
-          </div>
+          <ul class="nav">
+            <li><a href="#" class="nav"><i class="icon-arrow-left"></i> Previous</a></li>
+            <li class="navbar-text">1 of 356</li>
+            <li><a href="#" class="nav">Next <i class="icon-arrow-right"></i></a></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -40,7 +42,6 @@
   <div class="row-fluid">
     <div class="span6">
       <h4>Everything Elvis / Pauline Bartel</h4>
-      <label class="checkbox"><input type="checkbox"> Bookmark </label>
       <dl class="dl-horizontal">
         <dt>Title:</dt>
         <dd>Everything Elvis / Pauline Bartel</dd>
@@ -78,6 +79,7 @@
     </div>
 
     <div class="span6 well">
+      <label class="checkbox"><input type="checkbox"> Bookmark </label>
       <span class="badge badge-warning">Checked out</span>
       <!-- https://www.googleapis.com/books/v1/volumes?q=isbn:0878338780 -->
       <img src="http://bks2.books.google.com/books?id=gxYsVYxeaWIC&printsec=frontcover&img=1&zoom=1&source=gbs_api"/>
