@@ -5,16 +5,11 @@
   <%= link_to "previous", "/catalog/book", {:id => "previous-wireframe"} %>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="main">
 <div class="row-fluid">
-  
-  <div class="well span4">
-    <%= render :partial => "catalog/partials/facets.html.erb" %>
-  </div>
 
-  <div class="well">
-    finding aid display
-  </div>
+  <%= render :partial => "/catalog/partials/record_controls" %>
+
 
 
 </div>
