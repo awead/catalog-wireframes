@@ -177,11 +177,16 @@
         <!-- tab: inventory -->
         <div class="tab-pane" id="inventory">
           <h5>Collection Inventory</h5>
-          <p>
-            ajax load from solr a list of first-level components, and load more on scroll-down.  This will
-            help for collections that have many items attached at the first level and take a long time to
-            load.
-          </p>
+          <table class="table table-condensed table-striped table-hover">
+            <tr><th>Item</th><th>Location</th></tr>
+            <tr><td><%= link_to "Series I: Papers, circa 1970s-2007, undated" %></td></tr>
+            <tr><td><%= link_to "Series II: Scrapbooks, circa 1950-2006" %></td></tr>
+            <tr><td><%= link_to "Series III: Photographs, circa 1960s-2000" %></td></tr>
+            <tr><td><%= link_to "Series IV: Slides, circa 1968-2000" %></td></tr>
+            <tr><td><%= link_to "Series V: Negatives, circa 1968-2000" %></td></tr>
+            <tr><td><%= link_to "Series VI: Concert, Studio, and Television Recordings [RESTRICTED], circa 1960s-2000s" %></td></tr>
+            <tr><td><%= link_to "Series VII: Contact Sheets, 1968-1977, 2002, undated" %></td></tr>
+          </table>
         </div>
 
       </div>
