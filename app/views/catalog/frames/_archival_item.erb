@@ -2,20 +2,32 @@
 
 <div class="hidden">
   <%= link_to "next", "/catalog/image", {:id => "next-wireframe"} %>
-  <%= link_to "previous", "/catalog/finding_aid", {:id => "previous-wireframe"} %>
+  <%= link_to "previous", "/catalog/archival_series", {:id => "previous-wireframe"} %>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="main">
 <div class="row-fluid">
+
+  <%= render :partial => "/catalog/partials/record_controls" %>
+
+  <div class="row-fluid">
+
+    <div class="span3">
+      <ul class="nav nav-tabs nav-stacked">
+        <li><a href="#summary" data-toggle="tab">Summary</a></li>
+        <li><a href="#description" data-toggle="tab">Description</a></li>
+        <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
+        <li><a href="#subjects" data-toggle="tab">Subjects</a></li>
+        <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
+      </ul>
+    </div>
+    
+    <div class="span9">
+      <h4>Guide to the Herb Staehr Collection (ARC.0029)</h4>
+      archival item
+    </div>
   
-  <div class="well span4">
-    <%= render :partial => "catalog/partials/facets.html.erb" %>
   </div>
-
-  <div class="well">
-    archival item display
-  </div>
-
 
 </div>
 </div>
