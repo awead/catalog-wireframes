@@ -1,52 +1,87 @@
 <%= render :partial => "/catalog/partials/navbar_loggedin" %>
 
 <div class="hidden">
-  <%= next_frame "image" %>
-  <%= previous_frame "archival_item_digitized" %>
+  <%= next_frame "video" %>
+  <%= previous_frame "archival_item" %>
 </div>
 
 <div class="container-fluid" id="main">
 <div class="row-fluid">
 
+  <div class="alert alert-info fade in">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <h4 class="alert-heading">Digital item from Hydra</h4>
+    <p>
+      This item orginated in Hydra and has no corresponding item-level metadata or representation in
+      AT.  It's part of a collection and series, both of which are indicated using Hydra's interface.
+      When this item is exported to solr, that information is used to create the linkages around the 
+      record, such as the breadcrumb trail and the content links on the left.
+    </p>
+  </div>
+
   <%= render :partial => "/catalog/partials/record_controls" %>
 
-  <!-- Record display row -->
   <div class="row-fluid">
+
+    <div class="span3">
+      <ul class="nav nav-tabs nav-stacked">
+        <li><a href="#summary" data-toggle="tab">Summary</a></li>
+        <li><a href="#description" data-toggle="tab">Description</a></li>
+        <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
+        <li><a href="#subjects" data-toggle="tab">Subjects</a></li>
+        <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
+      </ul>
+    </div>
+    
+    <div class="span9">
+      <ul class="breadcrumb">
+        <li><a href="#">Rock and Roll Hall of Fame and Museum records</a> <span class="divider">/</span></li>
+        <li><a href="#">Education and Public Programs Division</a><span class="divider">/</span></li>
+        <li class="active">Oral history project. Ben E. King</li>
+      </ul>
+
+        <div class="row-fluid">
     <div class="span6">
-      <h4>Oral History Video</h4>
+      <h4>Oral history project. Ben E. King</h4>
       <dl class="dl-horizontal">
         <dt>Title:</dt>
-        <dd>Everything Elvis / Pauline Bartel</dd>
-        <dt>Additional Titles:</dt>
-        <dd>Elvis</dd>           
-        <dt>Author:</dt>
-        <dd><a href="#">Bartel, Pauline C</a></dd>
+        <dd>Oral history project. Ben E. King</dd>
+        <dt>Series:</dt>
+        <dd><%= link_to "Oral history project (Rock and Roll Hall of Fame and Museum)" %></dd>
         <dt>Format:</dt>
-        <dd>Book</dd>
-        <dt>Physical Details:</dt>
-        <dd>172 p. : ill. ; 26 cm</dd>
+        <dd>Video</dd>
+        <dt>Summary:</dt>
+        <dd>Ashley Kahn interviews singer/songwriter Ben E. King, discuss his work with the Drifters and his solo career.</dd>
+        <dt>Contents:</dt>
+        <dd>[Interview in two parts.]</dd>
+        <dt>Archival Collection:</dt>
+        <dd><%= link_to "Rock and Roll Hall of Fame and Museum records" %></dd>
         <dt>Subjects:</dt>
         <dd>
-          <%= link_to "Presley, Elvis, 1935-1977", "#" %><br/>
-          <%= link_to "Presley, Elvis, 1935-1977" %>--<%= link_to "Collectibles" %><br/>
-          <%= link_to "Inductee", "#" %>
+          <%= link_to "King, Ben E." %><br/>
+          <%= link_to "Singers" %><br/>
+          <%= link_to "Composers" %><br/>
+          <%= link_to "African American singers" %><br/>
+          <%= link_to "African American musicians" %><br/>
+          <%= link_to "African American composers" %><br/>
+          <%= link_to "Rock music" %>--<%= link_to "History and criticism" %><br/>
+          <%= link_to "Inductee" %><br/>
+          <%= link_to "Drifters (Musical group)" %><br/>
         </dd>
-        <dt>Publisher:</dt>
-        <dd>Dallas, Tex. : Taylor Pub. Co., c1995</dd>
-        <dt>Call Number:</dt>
+        <dt>Genre/Form:</dt>
         <dd>
-          ML420.P747 B378 1995<br/>
-          ML420.P747 B378E9 1995
+          <%= link_to "Oral histories" %><br/>
+          <%= link_to "Filmed interviews" %><br/>
+          <%= link_to "Nonfiction films" %><br/>
         </dd>
-        <dt>ISBN:
-        <dd>
-          0878338780<br/>
-          9780878338788
+        <dt>Contributors:</dt>
+         <dd>
+          <%= link_to "King, Ben E." %><br/>
+          <%= link_to "Kahn, Ashley" %><br/>
+          <%= link_to "Rock and Roll Hall of Fame Foundation" %><br/>
         </dd>
         <dt>OCLC No.:</dt>
-        <dd>31518608</dd>
-        <dt>Notes:</dt>
-        <dd>Sourcebook to Elvis memorabilia, souvenirs and collectibles</dd>
+        <dd>rrhof:3519</dd>
        </dl>
     </div>
 
@@ -55,6 +90,12 @@
         <%= image_tag "video-splash.png" %>
       </div<
     </div>
+  </div>
+
+
+
+    </div>
+  
   </div>
 
 </div>
