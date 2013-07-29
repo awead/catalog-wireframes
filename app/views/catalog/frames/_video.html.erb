@@ -1,8 +1,8 @@
 <%= render :partial => "/catalog/partials/navbar_loggedin" %>
 
 <div class="hidden">
-  <%= next_frame "" %>
-  <%= previous_frame "image" %>
+  <%= next_frame "image" %>
+  <%= previous_frame "archival_item_digitized" %>
 </div>
 
 <div class="container-fluid" id="main">
@@ -10,23 +10,51 @@
 
   <%= render :partial => "/catalog/partials/record_controls" %>
 
+  <!-- Record display row -->
   <div class="row-fluid">
+    <div class="span6">
+      <h4>Oral History Video</h4>
+      <dl class="dl-horizontal">
+        <dt>Title:</dt>
+        <dd>Everything Elvis / Pauline Bartel</dd>
+        <dt>Additional Titles:</dt>
+        <dd>Elvis</dd>           
+        <dt>Author:</dt>
+        <dd><a href="#">Bartel, Pauline C</a></dd>
+        <dt>Format:</dt>
+        <dd>Book</dd>
+        <dt>Physical Details:</dt>
+        <dd>172 p. : ill. ; 26 cm</dd>
+        <dt>Subjects:</dt>
+        <dd>
+          <%= link_to "Presley, Elvis, 1935-1977", "#" %><br/>
+          <%= link_to "Presley, Elvis, 1935-1977" %>--<%= link_to "Collectibles" %><br/>
+          <%= link_to "Inductee", "#" %>
+        </dd>
+        <dt>Publisher:</dt>
+        <dd>Dallas, Tex. : Taylor Pub. Co., c1995</dd>
+        <dt>Call Number:</dt>
+        <dd>
+          ML420.P747 B378 1995<br/>
+          ML420.P747 B378E9 1995
+        </dd>
+        <dt>ISBN:
+        <dd>
+          0878338780<br/>
+          9780878338788
+        </dd>
+        <dt>OCLC No.:</dt>
+        <dd>31518608</dd>
+        <dt>Notes:</dt>
+        <dd>Sourcebook to Elvis memorabilia, souvenirs and collectibles</dd>
+       </dl>
+    </div>
 
-    <div class="span3">
-      <ul class="nav nav-tabs nav-stacked">
-        <li><a href="#summary" data-toggle="tab">Summary</a></li>
-        <li><a href="#description" data-toggle="tab">Description</a></li>
-        <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
-        <li><a href="#subjects" data-toggle="tab">Subjects</a></li>
-        <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
-      </ul>
+    <div class="span6">
+      <div class="well well-inverse text-center">
+        <%= image_tag "video-splash.png" %>
+      </div<
     </div>
-    
-    <div class="span9">
-      <h4>Guide to the Herb Staehr Collection (ARC.0029)</h4>
-      video
-    </div>
-  
   </div>
 
 </div>
