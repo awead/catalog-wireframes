@@ -1,8 +1,8 @@
 <%= render :partial => "/catalog/partials/navbar_loggedin" %>
 
 <div class="hidden">
-  <%= link_to "next", "/catalog/archival_item", {:id => "next-wireframe"} %>
-  <%= link_to "previous", "/catalog/finding_aid", {:id => "previous-wireframe"} %>
+  <%= next_frame "archival_item" %>
+  <%= previous_frame "finding_aid" %>
 </div>
 
 <div class="container-fluid" id="main">
