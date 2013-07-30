@@ -1,8 +1,8 @@
 <%= render :partial => "/catalog/partials/navbar_loggedin" %>
 
 <div class="hidden">
-  <%= next_frame "video" %>
-  <%= previous_frame "archival_item" %>
+  <%= next_frame "" %>
+  <%= previous_frame "archival_item_digitized" %>
 </div>
 
 <div class="container-fluid" id="main">
@@ -10,10 +10,11 @@
 
   <div class="alert alert-info fade in">
     <button type="button" class="close" data-dismiss="alert">×</button>
-    <h4 class="alert-heading">Digital item from Hydra</h4>
+    <h4 class="alert-heading">Digitized EAD Item (Outside AT)</h4>
     <p>
       This item orginated in Hydra and has no corresponding item-level metadata or representation in
-      AT.  It's part of a collection and series, both of which are indicated using Hydra's interface.
+      AT.  It's part of a collection and series, both of which are created and maintained in AT, but
+      are linked to the item using Hydra's interface.
       When this item is exported to solr, that information is used to create the linkages around the 
       record, such as the breadcrumb trail and the content links on the left.
     </p>
