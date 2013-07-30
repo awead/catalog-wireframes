@@ -2,7 +2,7 @@
 
 <div class="hidden">
   <%= next_frame "video" %>
-  <%= previous_frame "archival_item" %>
+  <%= previous_frame "archival_item_digitized" %>
 </div>
 
 <div class="container-fluid" id="main">
@@ -23,8 +23,60 @@
     </div>
     
     <div class="span9">
-      <h4>Guide to the Herb Staehr Collection (ARC.0029)</h4>
-      image
+      <ul class="breadcrumb">
+        <li><a href="#">Herb Staehr Collection</a> <span class="divider">/</span></li>
+        <li><a href="#">Series I: Papers, circa 1970s-2007, undated</a><span class="divider">/</span></li>
+        <li class="active">Bootleg discographies, Blind Faith and Cream, 1998</li>
+      </ul>
+
+      <div class="row-fluid">
+        <div class="span6">
+          <div class="alert alert-info fade in">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <p>
+              This is now the record from Hydra, but the problem is that there is now
+              two records for this one item: one from the ead item, and another from
+              Hydra.
+              <b>Both this record and the one previous will appear in search results!</b>
+            </p>
+          </div>
+
+          <h4>Bootleg discographies, Blind Faith and Cream, 1998</h4>
+          <dl class="dl-horizontal">
+            <dt>Hydra field:</dt>
+            <dd>hydra metadata</dd>
+            <dt>Hydra field:</dt>
+            <dd>hydra metadata</dd>
+            <dt>Hydra field:</dt>
+            <dd>hydra metadata</dd>
+            <dt>Hydra field:</dt>
+            <dd>
+              hydra metadata<br/>
+              hydra metadata<br/>
+              hydra metadata<br/>
+              hydra metadata<br/>
+              hydra metadata<br/>
+              hydra metadata<br/>
+            </dd>
+            <dt>Hydra field:</dt>
+            <dd>hydra metadata</dd>
+            <dt>Hydra field:</dt>
+            <dd>hydra metadata</dd>
+            <dt>Hydra field:</dt>
+            <dd>hydra metadata</dd>
+            <dt>Hydra field:</dt>
+            <dd>hydra metadata</dd>
+            <dt>Hydra field:</dt>
+            <dd>hydra metadata</dd>
+          </dl>
+        </div>
+        <div class="span6">
+          <div class="well">
+            viewing interface goes here for image, pdf, a/v, etc.
+            <%= ("<br/>"*20).html_safe %>
+          </div>
+        </div>
+      </div>
     </div>
   
   </div>

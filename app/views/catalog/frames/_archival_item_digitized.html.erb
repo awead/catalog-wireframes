@@ -1,7 +1,7 @@
 <%= render :partial => "/catalog/partials/navbar_loggedin" %>
 
 <div class="hidden">
-  <%= next_frame "video" %>
+  <%= next_frame "image" %>
   <%= previous_frame "archival_item" %>
 </div>
 
@@ -39,11 +39,28 @@
         <li class="active">Bootleg discographies, Blind Faith and Cream, 1998</li>
       </ul>
 
-      <h4>Bootleg discographies, Blind Faith and Cream, 1998</h4>
-      <dl class="dl-horizontal">
-        <dt>Location:</dt>
-        <dd>Box: 1, Folder: 3 (Text)</dd>
-      </dl>
+      <div class="row-fluid">
+        <div class="span6">
+          <div class="alert alert-info fade in">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <p>
+              Note: this is just the metadata from the ead.  No additional information from
+              Hydra is displayed here, other than the digital content on the right.
+            </p>
+          </div>
+
+          <h4>Bootleg discographies, Blind Faith and Cream, 1998</h4>
+          <dl class="dl-horizontal">
+            <dt>Location:</dt>
+            <dd>Box: 1, Folder: 3 (Text)</dd>
+          </dl>
+        </div>
+        <div class="span6">
+          <div class="well">
+            viewing interface goes here for image, pdf, a/v, etc.
+          </div>
+        </div>
+      </div>
     </div>
   
   </div>
