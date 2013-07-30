@@ -11,8 +11,10 @@
   <button type="button" class="close" data-dismiss="alert">×</button>
   <h4 class="alert-heading">Digitized EAD Item</h4>
   <p>
-    Standard display page for any item-level component in a collection that has been digtized
-    in Hydra and exported back out to Blacklight.
+    Standard display page for any item-level component that originated in a finding aid, but has since been
+    digitized and ingested into Hydra.  <b>Note: this is still the record as it appears in the finding aid!</b>
+    The only different is that the digital content is viewable via the pane on the right.  There now exists
+    an additional record in Blacklight, originating from Hydra, that also corresponds to this item.
   </p>
 </div>
 
@@ -58,6 +60,7 @@
         <div class="span6">
           <div class="well">
             viewing interface goes here for image, pdf, a/v, etc.
+            <%= ("<br/>"*20).html_safe %>
           </div>
         </div>
       </div>

@@ -1,0 +1,84 @@
+<%= render :partial => "/catalog/partials/navbar_loggedin" %>
+
+<div class="hidden">
+  <%= next_frame "archival_item" %>
+  <%= previous_frame "archival_series" %>
+</div>
+
+<div class="container-fluid" id="main">
+
+<div class="alert alert-info fade in">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <h4 class="alert-heading">Digital EAD Series</h4>
+  <p>
+    This is an example of a series or sub-series component that is created in AT, but has no attached item
+    components.  Its items consist solely of digital objects in Hydra, each of which has been linked to this
+    particular series and collection identifier.   
+  </p>
+  <p>
+    This sort of arrangement is useful for born-digitial objects that are ingested into Hydra in bulk.  Collection
+    or series-level metadata and arrangement is accomplished via AT, while the metadata for indivudual digital
+    objects is applied via Hydra.
+  </p>
+</div>
+
+<div class="row-fluid">
+
+  <%= render :partial => "/catalog/partials/record_controls" %>
+
+  <div class="row-fluid">
+
+    <div class="span3">
+      <ul class="nav nav-tabs nav-stacked">
+        <li><a href="#summary" data-toggle="tab">Summary</a></li>
+        <li><a href="#description" data-toggle="tab">Description</a></li>
+        <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
+        <li><a href="#subjects" data-toggle="tab">Subjects</a></li>
+        <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
+      </ul>
+    </div>
+    
+    <div class="span9">
+        
+      <ul class="breadcrumb">
+        <li><a href="#">Sample Collection</a> <span class="divider">/</span></li>
+        <li class="active">Series III: Images, 2010</li>
+      </ul>
+
+      <h4>Series III: Images, 2010</h4>
+      <h5>Scope and Content</h5>
+      <p>
+        Series III: Images, 2010, consists of an assortment of images gathered from a hard drive donated by Mr. X.
+      </p>
+
+      <table class="table table-condensed table-striped table-hover">
+        <tr><th>Item</th><th>Location</th></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+      </table>
+
+    </div>
+  
+  </div>
+
+</div>
+</div>
