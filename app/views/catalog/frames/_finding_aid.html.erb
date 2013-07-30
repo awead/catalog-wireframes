@@ -186,7 +186,7 @@
         <!-- tab: inventory -->
         <div class="tab-pane" id="inventory">
           <h5>Collection Inventory</h5>
-          <table class="table table-condensed table-striped table-hover">
+          <table id="inventory_table" class="table table-condensed table-striped table-hover">
             <tr><th>Item</th><th>Location</th></tr>
             <tr><td><%= link_to "Series I: Papers, circa 1970s-2007, undated" %></td></tr>
             <tr><td><%= link_to "Series II: Scrapbooks, circa 1950-2006" %></td></tr>
@@ -196,6 +196,33 @@
             <tr><td><%= link_to "Series VI: Concert, Studio, and Television Recordings [RESTRICTED], circa 1960s-2000s" %></td></tr>
             <tr><td><%= link_to "Series VII: Contact Sheets, 1968-1977, 2002, undated" %></td></tr>
           </table>
+
+          <div id="lastPostsLoader"></div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    function lastAddedLiveFunc()
+    {
+      var row = '<tr><td><%= link_to "Another item" %></td></tr>';
+      $('#inventory_table').append(row);
+        
+    };
+
+    //lastAddedLiveFunc();
+    $(window).scroll(function(){
+
+        var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+        var  scrolltrigger = 0.95;
+
+        if  ((wintop/(docheight-winheight)) > scrolltrigger) {
+         //console.log('scroll bottom');
+         lastAddedLiveFunc();
+        }
+    });
+});
+</script>
+
         </div>
 
       </div>
