@@ -51,7 +51,7 @@
         Series III: Images, 2010, consists of an assortment of images gathered from a hard drive donated by Mr. X.
       </p>
 
-      <table class="table table-condensed table-striped table-hover">
+      <table id="inventory_table" class="table table-condensed table-striped table-hover">
         <tr><th>Item</th><th>Location</th></tr>
         <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
         <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
@@ -75,6 +75,32 @@
         <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
         <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
       </table>
+
+      <div id="lastPostsLoader"></div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    function lastAddedLiveFunc()
+    {
+      var row = '<tr><td><%= link_to "More images retrieved" %></td><td><span class="badge">Available online</span></td></tr>';
+      $('#inventory_table').append(row);
+        
+    };
+
+    //lastAddedLiveFunc();
+    $(window).scroll(function(){
+
+        var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+        var  scrolltrigger = 0.95;
+
+        if  ((wintop/(docheight-winheight)) > scrolltrigger) {
+         //console.log('scroll bottom');
+         lastAddedLiveFunc();
+        }
+    });
+});
+</script>
 
     </div>
   

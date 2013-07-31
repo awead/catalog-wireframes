@@ -11,9 +11,9 @@
   <button type="button" class="close" data-dismiss="alert">×</button>
   <h4 class="alert-heading">EAD series with mixed content</h4>
   <p>
-    This is the same EAD series, but with both digital content at the item level, and series level.  Series-level
-    digital content cannont be interspersed with the exisiting item level content.  It's either before or after;
-    however, it can be set apart in a different list or table.
+    This is the same EAD series, but with both digital content at the item level, and series level.
+    Series-level digital content could be interspersed with the exisiting item level content, however, it
+    would have to be sorted alphabetically and may alter the order of elements as they exist in the EAD.
   </p>
 </div>
 
@@ -50,7 +50,7 @@
         the audiovisuals in the collection.
       </p>
 
-      <table class="table table-condensed table-striped table-hover">
+      <table id="inventory_table" class="table table-condensed table-striped table-hover">
         <tr><th>Item</th><th>Location</th></tr>
         <tr><td><%= link_to "Biography, Ten Years After, undated" %></td><td>Box: 1, Folder: 1 (Text)</td></tr>
         <tr><td><%= link_to "Book Web site, undated" %></td><td>Box: 1, Folder: 2 (Text)</td></tr>

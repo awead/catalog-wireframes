@@ -51,7 +51,7 @@
         the audiovisuals in the collection.
       </p>
 
-      <table class="table table-condensed table-striped table-hover">
+      <table id="inventory_table" class="table table-condensed table-striped table-hover">
         <tr><th>Item</th><th>Location</th></tr>
         <tr><td><%= link_to "Biography, Ten Years After, undated" %></td><td>Box: 1, Folder: 1 (Text)</td></tr>
         <tr><td><%= link_to "Book Web site, undated" %></td><td>Box: 1, Folder: 2 (Text)</td></tr>
@@ -71,6 +71,32 @@
         <tr><td><%= link_to "Video list markup, undated" %></td><td>Box: 2, Folder: 15 (Text)</td></tr>
 
       </table>
+
+      <div id="lastPostsLoader"></div>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+    function lastAddedLiveFunc()
+    {
+      var row = '<tr><td><%= link_to "More item level components" %></td><td>Box: X, Folder: Y (Blah)</td></tr>';
+      $('#inventory_table').append(row);
+        
+    };
+
+    //lastAddedLiveFunc();
+    $(window).scroll(function(){
+
+        var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+        var  scrolltrigger = 0.95;
+
+        if  ((wintop/(docheight-winheight)) > scrolltrigger) {
+         //console.log('scroll bottom');
+         lastAddedLiveFunc();
+        }
+    });
+});
+</script>
 
     </div>
   
