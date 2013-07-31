@@ -1,20 +1,19 @@
 <%= render :partial => "/catalog/partials/navbar_loggedin" %>
 
 <div class="hidden">
-  <%= next_frame "archival_series_mixed" %>
-  <%= previous_frame "finding_aid" %>
+  <%= next_frame "archival_series_digital" %>
+  <%= previous_frame "archival_series" %>
 </div>
 
 <div class="container-fluid" id="main">
 
 <div class="alert alert-info fade in">
   <button type="button" class="close" data-dismiss="alert">×</button>
-  <h4 class="alert-heading">EAD Series</h4>
+  <h4 class="alert-heading">EAD series with mixed content</h4>
   <p>
-    Any EAD series component can be displayed as its own page, with a breadcrumb trail giving its position within
-    the finding aid, and listing additional items or subseries that are contained within it.  The 
-    <span class="badge">Available online</span> badge indicates an item has been digitized and can be viewed 
-    or listened to online.
+    This is the same EAD series, but with both digital content at the item level, and series level.  Series-level
+    digital content cannont be interspersed with the exisiting item level content.  It's either before or after;
+    however, it can be set apart in a different list or table.
   </p>
 </div>
 
@@ -69,7 +68,20 @@
         <tr><td><%= link_to "Ten Years After Now tour, 2007" %></td><td>Box: 2, Folder: 12 (Text)</td></tr>
         <tr><td><%= link_to "Video and audio inventories" %></td></tr>
         <tr><td><%= link_to "Video list markup, undated" %></td><td>Box: 2, Folder: 15 (Text)</td></tr>
-
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
+        <tr><td><%= link_to "Image file name" %></td><td><span class="badge">Available online</span></td></tr>
       </table>
 
     </div>
