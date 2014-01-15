@@ -1,0 +1,74 @@
+<%= render :partial => "/catalog/partials/navbar_loggedin" %>
+
+<div class="hidden">
+  <%= next_frame "archival_series_4" %>
+  <%= previous_frame "archival_series_2" %>
+</div>
+
+<div class="container-fluid" id="main">
+
+<div class="row-fluid">
+
+  <%= render :partial => "/catalog/partials/record_controls" %>
+
+  <div class="row-fluid">
+
+    <div class="span3">
+      <ul class="nav nav-tabs nav-stacked">
+        <li><a href="#summary" data-toggle="tab">Summary</a></li>
+        <li><a href="#description" data-toggle="tab">Description</a></li>
+        <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
+        <li><a href="#subjects" data-toggle="tab">Subjects</a></li>
+        <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
+        <li><a href="#collection_search" data-toggle="tab">Search Collection</a></li>
+      </ul>
+    </div>
+    
+    <div class="span9">
+        
+      <ul class="breadcrumb">
+        <li><a href="#">Jeff Gold Collection</a> <span class="divider">/</span></li>
+        <li><a href="#">Series VII: Audiovisual Materials [RESTRICTED], 1966-2001, undated</a> <span class="divider">/</span></li>
+        <li class="active">Subseries 2: Video [RESTRICTED]</li>
+      </ul>
+
+      <legend>Scope and Content</legend>
+      <p>Series VII: Audiovisual Materials contains both audio recordings and video tapes that date from the years 1967-2001. These materials are arranged by audio or video format, and then alphabetically by artist name or event title.</p>
+
+      <legend>Access Restrictions</legend>
+      <p>The condition of some of these materials has not yet been determined for playback purposes. Some of the audiovisual materials in the collection are on defunct media formats and, therefore, are RESTRICTED. Access copies of these materials may have to be created prior to use. Consult the Library and Archives staff in advance of your visit to ensure access to these materials is available.</p>
+
+      <legend>Dates</legend>
+      <p>1964-2001, undated</p>
+
+      <h4>Series VII: Audiovisual Materials [RESTRICTED], 1966-2001, undated</h4>
+      <dl class="dl-horizontal">
+        <dt>Dates:</dt>
+        <dd>1971-2001, undated</dd>
+        <dt>Scope and Content:</dt>
+        <dd>
+          The videos found here are primarily VHS, and contain either television appearances or promotional content, including in-store events and concerts. There is also 8mm and 16mm film and H-8.
+        </dd>
+        <dt>Access Restrictions:</dt>
+        <dd>
+          The condition of these materials has not yet been determined for playback purposes. Access copies of these materials may have to be created prior to use. Consult the Library and Archives staff in advance of your visit to ensure access to these materials is available.
+        </dd>
+      </dl>
+   
+      <table class="table table-condensed table-striped table-hover" id="inventory_table"><tbody>
+        <tr><th>Item</th><th>Materials</th></tr>
+        <tr>
+          <td><a href="#">Bumbershoot: the Seattle Arts Festival promo tape (VHS videocassette), undated</a></td>
+          <td>Box: AV4, Cassette: 14 <i class="icon-film pull-right"></i></td>
+        </tr>
+        <tr>
+          <td><a href="#">The Concert for the Rock and Roll Hall of Fame (VHS videocassette), 1996 September 6</a>
+          </td><td>Box: AV3, Cassette: 23 <i class="icon-film pull-right"></i></td>
+        </tr>
+      </tbody></table>
+    </div>
+  
+  </div>
+
+</div>
+</div>
