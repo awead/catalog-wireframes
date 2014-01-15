@@ -26,18 +26,23 @@
         <li class="active"><a href="#summary" data-toggle="tab">Summary</a></li>
         <li><a href="#description" data-toggle="tab">Description</a></li>
         <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
-        <li><a href="#subjects" data-toggle="tab">Subjects</a></li>
+        <li><a href="#subjects" data-toggle="tab">Find More</a></li>
         <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
+        <li><a href="#collection_search" data-toggle="tab">Search Collection</a></li>
       </ul>
     </div>
     
     <div class="span9">
-      <h4>Guide to the Herb Staehr Collection (ARC.0029)</h4>
+      <h3>
+        <%= image_tag "icons/archival_collection.png" %>
+        Guide to the Herb Staehr Collection
+        <small>ARC.0029</small>
+      </h3>
       <div class="tab-content">
         
         <!-- tab: general information and collection overview -->
         <div class="tab-pane active" id="summary">
-          <h5>General Information</h5>
+          <legend>General Information</legend>
           <dl class="dl-horizontal">
             <dt>Title:</dt>
             <dd>Herb Staehr Collection</dd>
@@ -63,7 +68,7 @@
             <dt>Preferred Citation:</dt>
             <dd>[Identification of Item], Herb Staehr Collection, Library and Archives, Rock and Roll Hall of Fame and Museum.</dd>
           </dl>          
-          <h5>Collection Overview</h5>
+          <legend>Collection Overview</legend>
           <p>
             The Herb Staehr Collection spans the years circa 1950 to 2007, with the bulk of the material dating between
             1968 and 2007. It comprises 138 linear feet of material mainly related to Alvin Lee, Ten Years After, and
@@ -80,7 +85,7 @@
 
         <!-- tab: bio, sep materials, history -->
         <div class="tab-pane" id="description">
-          <h5>Biographical Information</h5>
+          <legend>Biographical Information</legend>
           <dl class="dl-horizontal">
             <dt>1949</dt>
             <dd>Herb Staehr born in Hartford, Connecticut.</dd>
@@ -101,14 +106,14 @@
             "Tribute to Herb Staehr -- Historian of the Band Ten Years After." Ten Years After. 
             Accessed May 13, 2011. http://www.ten-years-after.com/herb/tribute.htm.
           </p>
-          <h5>Separated Materials</h5>
+          <legend>Separated Materials</legend>
           <p>
             Commercially released CDs, videocassettes, and audiocassettes have been transferred to the library collection.
             Please search for the "Herb Staehr Collection" in the library catalog for a list of donated titles. If you are
             unable to find what you are looking for, consult the Library and Archives staff to ensure these materials are
             available.
           </p>
-          <h5>Custodial History</h5>
+          <legend>Custodial History</legend>
           <p>
             The Herb Staehr Collection was received by the Rock and Roll Hall of Fame and Museum, Inc. as a gift from Thomas
             W. and Claudia Staehr on December 8, 2008.
@@ -117,7 +122,7 @@
 
         <!-- tab: restrictions -->
         <div class="tab-pane" id="restrictions">
-          <h5>Restrictions</h5>
+          <legend>Restrictions</legend>
           <h6>Use</h6>
           <p>
             The Rock and Roll Hall of Fame and Museum, Inc. has a limited copyright license to the materials within this collection.
@@ -136,7 +141,7 @@
 
         <!-- tab: subject headings -->
         <div class="tab-pane" id="subjects">
-          <h5>Subject Headings</h5>
+          <legend>Subject Headings</legend>
           <p>Click on the links below to see more items in the catalog on these topics.</p>
           <dl class="dl-horizontal">
             <dt>Name:</dt>
@@ -185,7 +190,7 @@
 
         <!-- tab: inventory -->
         <div class="tab-pane" id="inventory">
-          <h5>Collection Inventory</h5>
+          <h4>Collection Inventory</h4>
           <table id="inventory_table" class="table table-condensed table-striped table-hover">
             <tr><th>Item</th><th>Location</th></tr>
             <tr><td><%= link_to "Series I: Papers, circa 1970s-2007, undated" %></td></tr>
@@ -224,6 +229,18 @@ $(document).ready(function(){
 </script>
 
         </div>
+
+        <div class="tab-pane" id="collection_search">
+          <legend>Search Collection</legend>
+          <p>Search for individual items within this collection.</p>
+
+          <form action="/" class="form-search">
+            <input autofocus="autofocus" class="search-query" id="q" name="q" type="text">
+            <button class="btn" name="button">Search Collection</button>
+          </form>
+        </div>
+
+
 
       </div>
     </div>
