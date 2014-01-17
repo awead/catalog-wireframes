@@ -21,18 +21,17 @@
 
   <div class="row-fluid">
 
-    <div class="span3">
+    <div class="span2">
       <ul class="nav nav-tabs nav-stacked">
         <li class="active"><a href="#summary" data-toggle="tab">Summary</a></li>
         <li><a href="#description" data-toggle="tab">Description</a></li>
         <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
         <li><a href="#subjects" data-toggle="tab">Find More</a></li>
         <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
-        <li><a href="#collection_search" data-toggle="tab">Search Collection</a></li>
       </ul>
     </div>
     
-    <div class="span9">
+    <div class="span10">
       <h3>
         <%= image_tag "icons/archival_collection.png" %>
         Guide to the Herb Staehr Collection
@@ -141,6 +140,14 @@
 
         <!-- tab: subject headings -->
         <div class="tab-pane" id="subjects">
+          <legend>Search Collection</legend>
+          <p>Search for individual items within this collection.</p>
+
+          <form action="/" class="form-search">
+            <input autofocus="autofocus" class="search-query" id="q" name="q" type="text">
+            <button class="btn" name="button">Search Collection</button>
+          </form>
+
           <legend>Subject Headings</legend>
           <p>Click on the links below to see more items in the catalog on these topics.</p>
           <dl class="dl-horizontal">
@@ -229,18 +236,6 @@ $(document).ready(function(){
 </script>
 
         </div>
-
-        <div class="tab-pane" id="collection_search">
-          <legend>Search Collection</legend>
-          <p>Search for individual items within this collection.</p>
-
-          <form action="/" class="form-search">
-            <input autofocus="autofocus" class="search-query" id="q" name="q" type="text">
-            <button class="btn" name="button">Search Collection</button>
-          </form>
-        </div>
-
-
 
       </div>
     </div>
