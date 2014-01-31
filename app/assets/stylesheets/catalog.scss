@@ -20,6 +20,7 @@ $dropdown-link-hover-color:     #ffffff;
 
 // Other settings
 $navbar-height: 40px;
+//$navbar-margin-bottom: 0px;
 
 // -----------------------------------------------------
 // Heere begineth the sass
@@ -34,12 +35,22 @@ $navbar-height: 40px;
   border-bottom-width: 2px;
 }
 
+.navbar-default { 
+  @include gradient-vertical(lighten($gray-lighter, 15%), $gray-lighter);
+  border-bottom-color: $gray-light;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
 .inline {
   display: inline;
 }
 
 .block {
   display: block;
+}
+
+.white {
+  color: #ffffff;
 }
 
 .well-inverse {
@@ -68,4 +79,17 @@ $navbar-height: 40px;
 #footer {
   margin-top: 20px;
   margin-bottom: 0px;
+}
+
+@media (max-width: $screen-sm) {
+  .navbar-default {
+    margin-bottom: 20px;
+    min-height: 5px;
+  }
+  .navbar-inverse {
+    margin-bottom: 0px;
+  }
+  #main{
+    margin-top: 0px;
+  }
 }
