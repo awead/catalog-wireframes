@@ -1,11 +1,7 @@
-<%= render :partial => "/catalog/partials/navbar_loggedin" %>
-
 <div class="hidden">
   <%= next_frame "finding_aid" %>
   <%= previous_frame "results" %>
 </div>
-
-<div class="container-fluid" id="main">
 
 <div class="alert alert-info fade in">
   <button type="button" class="close" data-dismiss="alert">×</button>
@@ -16,83 +12,81 @@
   </p>
 </div>
 
-<div class="row-fluid">
+<%= render :partial => "/catalog/partials/record_controls" %>
 
-  <%= render :partial => "/catalog/partials/record_controls" %>
-
-  <!-- Record display -->
-  <div class="container-fluid">
-
-    <div class="media row-fluid">
-      <a class="pull-left" href="#"><%= image_tag "icons/book.png" %></a>
-      <div class="media-body">
-        <h4>Everything Elvis / Pauline Bartel</h4>
-      </div>
+<div class="col-lg-12">
+  <div class="media">
+    <a class="pull-left" href="#"><%= image_tag "icons/book.png", :class => "media-object" %></a>
+    <div class="media-body">
+      <h4 class="media-heading">Everything Elvis / Pauline Bartel</h4>
     </div>
-
-    <div class="row-fluid">
-      <div class="span6">
-        <dl class="dl-horizontal">
-          <dt>Title:</dt>
-          <dd>Everything Elvis / Pauline Bartel</dd>
-          <dt>Additional Titles:</dt>
-          <dd>Elvis</dd>           
-          <dt>Author:</dt>
-          <dd><a href="#">Bartel, Pauline C</a></dd>
-          <dt>Format:</dt>
-          <dd>Book</dd>
-          <dt>Physical Details:</dt>
-          <dd>172 p. : ill. ; 26 cm</dd>
-          <dt>Subjects:</dt>
-          <dd>
-            <%= link_to "Presley, Elvis, 1935-1977", "#" %><br/>
-            <%= link_to "Presley, Elvis, 1935-1977" %>--<%= link_to "Collectibles" %><br/>
-            <%= link_to "Inductee", "#" %>
-          </dd>
-          <dt>Publisher:</dt>
-          <dd>Dallas, Tex. : Taylor Pub. Co., c1995</dd>
-          <dt>Call Number:</dt>
-          <dd>
-            ML420.P747 B378 1995<br/>
-            ML420.P747 B378E9 1995
-          </dd>
-          <dt>ISBN:
-          <dd>
-            0878338780<br/>
-            9780878338788
-          </dd>
-          <dt>OCLC No.:</dt>
-          <dd>31518608</dd>
-          <dt>Notes:</dt>
-          <dd>Sourcebook to Elvis memorabilia, souvenirs and collectibles</dd>
-         </dl>
-      </div>
-
-      <div class="span6" id="sidebar">
-        <div class="row-fluid span12">
-          <div class="innovative_holdings" id="b3386793"><div class="row-fluid">
-            <h3>Holdings</h3>
-            <table class="table table-condensed">
-              <tbody><tr>
-                <th>Location</th>
-                <th>Call Number</th>
-                <th>Availability</th>
-              </tr>
-              <tr>  
-                <td>&nbsp;Rock Hall Library Reading Room </td><td>&nbsp;ML3521 .C43C6 1975 &nbsp;</td><td>&nbsp;LIB USE ONLY</td>
-              </tr></tbody>
-            </table>
-          </div>
-        </div>
-        <div class="media row-fluid" id="show_gb">
-          <a class="pull-left" target="_blank" href="http://books.google.com/books?id=NG6YMkRRJrIC&amp;printsec=frontcover&amp;dq=isbn:0306800144&amp;hl=&amp;cd=1&amp;source=gbs_api"><img src="http://bks2.books.google.com/books?id=gxYsVYxeaWIC&printsec=frontcover&img=1&zoom=1&source=gbs_api"/></a>
-          <div class="media-body">View this item on Google Books</div>
-        </div>
-      </div>
-    
-    </div>
-  
-  </div
-
+  </div>
 </div>
+
+<div class="col-lg-12">
+  <div class="col-sm-6">
+    <dl class="dl-horizontal">
+      <dt>Title:</dt>
+      <dd>Everything Elvis / Pauline Bartel</dd>
+      <dt>Additional Titles:</dt>
+      <dd>Elvis</dd>           
+      <dt>Author:</dt>
+      <dd><a href="#">Bartel, Pauline C</a></dd>
+      <dt>Format:</dt>
+      <dd>Book</dd>
+      <dt>Physical Details:</dt>
+      <dd>172 p. : ill. ; 26 cm</dd>
+      <dt>Subjects:</dt>
+      <dd>
+        <%= link_to "Presley, Elvis, 1935-1977", "#" %><br/>
+        <%= link_to "Presley, Elvis, 1935-1977" %>--<%= link_to "Collectibles" %><br/>
+        <%= link_to "Inductee", "#" %>
+      </dd>
+      <dt>Publisher:</dt>
+      <dd>Dallas, Tex. : Taylor Pub. Co., c1995</dd>
+      <dt>Call Number:</dt>
+      <dd>
+        ML420.P747 B378 1995<br/>
+        ML420.P747 B378E9 1995
+      </dd>
+      <dt>ISBN:
+      <dd>
+        0878338780<br/>
+        9780878338788
+      </dd>
+      <dt>OCLC No.:</dt>
+      <dd>31518608</dd>
+      <dt>Notes:</dt>
+      <dd>Sourcebook to Elvis memorabilia, souvenirs and collectibles</dd>
+     </dl>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="col-lg-12">
+      <div class="innovative_holdings" id="b3386793">
+        <h3>Holdings</h3>
+        <table class="table table-condensed">
+          <tbody>
+            <tr>
+              <th>Location</th>
+              <th>Call Number</th>
+              <th>Availability</th>
+            </tr>
+            <tr>
+              <td>Rock Hall Library Reading Room </td><td>ML3521 .C43C6 1975 </td><td>LIB USE ONLY</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-lg-12">
+      <div class="media" id="show_gb">
+        <a class="pull-left" target="_blank" href="http://books.google.com/books?id=NG6YMkRRJrIC&amp;printsec=frontcover&amp;dq=isbn:0306800144&amp;hl=&amp;cd=1&amp;source=gbs_api">
+          <img src="http://bks2.books.google.com/books?id=gxYsVYxeaWIC&printsec=frontcover&img=1&zoom=1&source=gbs_api" class="media-object"/>
+        </a>
+        <div class="media-body">View this item on Google Books</div>
+      </div>
+    </div>
+  </div>
+    
 </div>
