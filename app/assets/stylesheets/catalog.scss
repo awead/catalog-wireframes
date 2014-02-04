@@ -28,6 +28,10 @@ $navbar-height: 40px;
 
 @import "bootstrap";
 
+h1, h2, h3 {
+  margin-top: 10px;
+}
+
 .navbar-inverse { 
   @include gradient-vertical($catalog-red, $catalog-darker-red);
   border-bottom-color: $catalog-darker-red;
