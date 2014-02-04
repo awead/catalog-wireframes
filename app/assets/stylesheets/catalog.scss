@@ -45,6 +45,14 @@ h1, h2, h3 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
+
+a.glyphicon {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 .inline {
   display: inline;
 }
