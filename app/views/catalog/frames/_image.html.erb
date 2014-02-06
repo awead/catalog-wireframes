@@ -1,85 +1,80 @@
-<%= render :partial => "/catalog/partials/navbar_loggedin" %>
-
 <div class="hidden">
   <%= next_frame "video" %>
-  <%= previous_frame "archival_item_digitized" %>
+  <%= previous_frame "archival_item" %>
 </div>
 
-<div class="container-fluid" id="main">
-<div class="row-fluid">
+<%= render :partial => "/catalog/partials/record_controls" %>
 
-  <%= render :partial => "/catalog/partials/record_controls" %>
+<div class="col-sm-4 col-md-3 col-lg-2">
+  <ul class="nav nav-tabs nav-stacked">
+    <li><a href="#summary" data-toggle="tab">Summary</a></li>
+    <li><a href="#description" data-toggle="tab">Description</a></li>
+    <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
+    <li><a href="#subjects" data-toggle="tab">Find More</a></li>
+    <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
+  </ul>
+</div>
 
-  <div class="row-fluid">
+<div class="col-sm-8 col-md-9 col-lg-10">
+      
+  <ul class="breadcrumb">
+    <li><a href="#">Herb Staehr Collection</a></li>
+    <li><a href="#">Series I: Papers</a></li>
+    <li class="active">Bootleg discographies, Blind Faith and Cream</li>
+  </ul>
 
-    <div class="span2">
-      <ul class="nav nav-tabs nav-stacked">
-        <li><a href="#summary" data-toggle="tab">Summary</a></li>
-        <li><a href="#description" data-toggle="tab">Description</a></li>
-        <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
-        <li><a href="#subjects" data-toggle="tab">Subjects</a></li>
-        <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
-      </ul>
-    </div>
-    
-    <div class="span10">
-      <ul class="breadcrumb">
-        <li><a href="#">Herb Staehr Collection</a> <span class="divider">/</span></li>
-        <li><a href="#">Series I: Papers</a><span class="divider">/</span></li>
-        <li class="active">Bootleg discographies, Blind Faith and Cream</li>
-      </ul>
+  <div class="row">
 
-      <div class="row-fluid">
-        <div class="span6">
-          <div class="alert alert-info fade in">
-            <button type="button" class="close" data-dismiss="alert">×</button>
-            <p>
-              This is the record from Hydra, but the problem is that there are now
-              two records for this one item: one from the ead item, and another from
-              Hydra.
-              <b>Both this record and the one previous will appear in search results!</b>
-            </p>
-          </div>
-
-          <h4>Bootleg discographies, Blind Faith and Cream</h4>
-          <dl class="dl-horizontal">
-            <dt>Hydra field:</dt>
-            <dd>hydra metadata</dd>
-            <dt>Hydra field:</dt>
-            <dd>hydra metadata</dd>
-            <dt>Hydra field:</dt>
-            <dd>hydra metadata</dd>
-            <dt>Hydra field:</dt>
-            <dd>
-              hydra metadata<br/>
-              hydra metadata<br/>
-              hydra metadata<br/>
-              hydra metadata<br/>
-              hydra metadata<br/>
-              hydra metadata<br/>
-            </dd>
-            <dt>Hydra field:</dt>
-            <dd>hydra metadata</dd>
-            <dt>Hydra field:</dt>
-            <dd>hydra metadata</dd>
-            <dt>Hydra field:</dt>
-            <dd>hydra metadata</dd>
-            <dt>Hydra field:</dt>
-            <dd>hydra metadata</dd>
-            <dt>Hydra field:</dt>
-            <dd>hydra metadata</dd>
-          </dl>
-        </div>
-        <div class="span6">
-          <div class="well">
-            viewing interface goes here for image, pdf, a/v, etc.
-            <%= ("<br/>"*20).html_safe %>
-          </div>
-        </div>
+    <div class="col-md-5 col-md-push-7 col-lg-6 col-lg-push-6">
+      <div class="well">
+        viewing interface goes here for image, pdf, a/v, etc.
+        <%= ("<br/>"*20).html_safe %>
       </div>
     </div>
-  
+
+    <div class="col-md-7 col-md-pull-5 col-lg-6 col-lg-pull-6">
+
+      <div class="alert alert-info fade in">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <p>
+          This is the record from Hydra, but the problem is that there are now
+          two records for this one item: one from the ead item, and another from
+          Hydra.
+          <b>Both this record and the one previous will appear in search results!</b>
+        </p>
+      </div>
+
+      <h4>Bootleg discographies, Blind Faith and Cream</h4>
+      <dl class="dl-horizontal">
+        <dt>Hydra field:</dt>
+        <dd>hydra metadata</dd>
+        <dt>Hydra field:</dt>
+        <dd>hydra metadata</dd>
+        <dt>Hydra field:</dt>
+        <dd>hydra metadata</dd>
+        <dt>Hydra field:</dt>
+        <dd>
+          hydra metadata<br/>
+          hydra metadata<br/>
+          hydra metadata<br/>
+          hydra metadata<br/>
+          hydra metadata<br/>
+          hydra metadata<br/>
+        </dd>
+        <dt>Hydra field:</dt>
+        <dd>hydra metadata</dd>
+        <dt>Hydra field:</dt>
+        <dd>hydra metadata</dd>
+        <dt>Hydra field:</dt>
+        <dd>hydra metadata</dd>
+        <dt>Hydra field:</dt>
+        <dd>hydra metadata</dd>
+        <dt>Hydra field:</dt>
+        <dd>hydra metadata</dd>
+      </dl>
+    
+    </div>
+        
   </div>
 
-</div>
 </div>

@@ -1,101 +1,94 @@
-<%= render :partial => "/catalog/partials/navbar_loggedin" %>
-
 <div class="hidden">
   <%= next_frame "" %>
   <%= previous_frame "image" %>
 </div>
 
-<div class="container-fluid" id="main">
-<div class="row-fluid">
+<div class="alert alert-info fade in">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <h4 class="alert-heading">Digitized EAD Item (Outside AT)</h4>
+  <p>
+    This item orginated in Hydra and has no corresponding item-level metadata or representation in
+    AT.  It's part of a collection and series, both of which are created and maintained in AT, but
+    are linked to the item using Hydra's interface.
+    When this item is exported to solr, that information is used to create the linkages around the 
+    record, such as the breadcrumb trail and the content links on the left.
+  </p>
+</div>
 
-  <div class="alert alert-info fade in">
-    <button type="button" class="close" data-dismiss="alert">×</button>
-    <h4 class="alert-heading">Digitized EAD Item (Outside AT)</h4>
-    <p>
-      This item orginated in Hydra and has no corresponding item-level metadata or representation in
-      AT.  It's part of a collection and series, both of which are created and maintained in AT, but
-      are linked to the item using Hydra's interface.
-      When this item is exported to solr, that information is used to create the linkages around the 
-      record, such as the breadcrumb trail and the content links on the left.
-    </p>
-  </div>
+<div class="col-sm-4 col-md-3 col-lg-2">
+  <ul class="nav nav-tabs nav-stacked">
+    <li><a href="#summary" data-toggle="tab">Summary</a></li>
+    <li><a href="#description" data-toggle="tab">Description</a></li>
+    <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
+    <li><a href="#subjects" data-toggle="tab">Find More</a></li>
+    <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
+  </ul>
+</div>
 
-  <%= render :partial => "/catalog/partials/record_controls" %>
+<div class="col-sm-8 col-md-9 col-lg-10">
 
-  <div class="row-fluid">
+  <ul class="breadcrumb">
+    <li><a href="#">Rock and Roll Hall of Fame and Museum records</a></li>
+    <li><a href="#">Education and Public Programs Division</a></li>
+    <li class="active">Oral history project. Ben E. King</li>
+  </ul>
 
-    <div class="span2">
-      <ul class="nav nav-tabs nav-stacked">
-        <li><a href="#summary" data-toggle="tab">Summary</a></li>
-        <li><a href="#description" data-toggle="tab">Description</a></li>
-        <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
-        <li><a href="#subjects" data-toggle="tab">Subjects</a></li>
-        <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
-      </ul>
-    </div>
-    
-    <div class="span10">
-      <ul class="breadcrumb">
-        <li><a href="#">Rock and Roll Hall of Fame and Museum records</a> <span class="divider">/</span></li>
-        <li><a href="#">Education and Public Programs Division</a><span class="divider">/</span></li>
-        <li class="active">Oral history project. Ben E. King</li>
-      </ul>
+  <div class="row">
 
-      <div class="row-fluid">
-        <div class="span6">
-          <h4>Oral history project. Ben E. King</h4>
-          <dl class="dl-horizontal">
-            <dt>Title:</dt>
-            <dd>Oral history project. Ben E. King</dd>
-            <dt>Series:</dt>
-            <dd><%= link_to "Oral history project (Rock and Roll Hall of Fame and Museum)" %></dd>
-            <dt>Format:</dt>
-            <dd>Video</dd>
-            <dt>Summary:</dt>
-            <dd>Ashley Kahn interviews singer/songwriter Ben E. King, discuss his work with the Drifters and his solo career.</dd>
-            <dt>Contents:</dt>
-            <dd>[Interview in two parts.]</dd>
-            <dt>Archival Collection:</dt>
-            <dd><%= link_to "Rock and Roll Hall of Fame and Museum records" %></dd>
-            <dt>Subjects:</dt>
-            <dd>
-              <%= link_to "King, Ben E." %><br/>
-              <%= link_to "Singers" %><br/>
-              <%= link_to "Composers" %><br/>
-              <%= link_to "African American singers" %><br/>
-              <%= link_to "African American musicians" %><br/>
-              <%= link_to "African American composers" %><br/>
-              <%= link_to "Rock music" %>--<%= link_to "History and criticism" %><br/>
-              <%= link_to "Inductee" %><br/>
-              <%= link_to "Drifters (Musical group)" %><br/>
-            </dd>
-            <dt>Genre/Form:</dt>
-            <dd>
-              <%= link_to "Oral histories" %><br/>
-              <%= link_to "Filmed interviews" %><br/>
-              <%= link_to "Nonfiction films" %><br/>
-            </dd>
-            <dt>Contributors:</dt>
-             <dd>
-              <%= link_to "King, Ben E." %><br/>
-              <%= link_to "Kahn, Ashley" %><br/>
-              <%= link_to "Rock and Roll Hall of Fame Foundation" %><br/>
-            </dd>
-            <dt>OCLC No.:</dt>
-            <dd>rrhof:3519</dd>
-           </dl>
-        </div>
+    <div class="col-md-5 col-md-push-7 col-lg-6 col-lg-push-6">
 
-        <div class="span6">
-          <div class="well well-inverse text-center">
-            <%= image_tag "video-splash.png" %>
-          </div>
-        </div>
+      <div class="well well-inverse text-center">
+        <%= image_tag "video-splash.png", :class => "img-responsive" %>
       </div>
+    
+    </div>
+
+    <div class="col-md-7 col-md-pull-5 col-lg-6 col-lg-pull-6">
+
+      <h4>Oral history project. Ben E. King</h4>
+      <dl class="dl-horizontal">
+        <dt>Title:</dt>
+        <dd>Oral history project. Ben E. King</dd>
+        <dt>Series:</dt>
+        <dd><%= link_to "Oral history project (Rock and Roll Hall of Fame and Museum)" %></dd>
+        <dt>Format:</dt>
+        <dd>Video</dd>
+        <dt>Summary:</dt>
+        <dd>Ashley Kahn interviews singer/songwriter Ben E. King, discuss his work with the Drifters and his solo career.</dd>
+        <dt>Contents:</dt>
+        <dd>[Interview in two parts.]</dd>
+        <dt>Archival Collection:</dt>
+        <dd><%= link_to "Rock and Roll Hall of Fame and Museum records" %></dd>
+        <dt>Subjects:</dt>
+        <dd>
+          <%= link_to "King, Ben E." %><br/>
+          <%= link_to "Singers" %><br/>
+          <%= link_to "Composers" %><br/>
+          <%= link_to "African American singers" %><br/>
+          <%= link_to "African American musicians" %><br/>
+          <%= link_to "African American composers" %><br/>
+          <%= link_to "Rock music" %>--<%= link_to "History and criticism" %><br/>
+          <%= link_to "Inductee" %><br/>
+          <%= link_to "Drifters (Musical group)" %><br/>
+        </dd>
+        <dt>Genre/Form:</dt>
+        <dd>
+          <%= link_to "Oral histories" %><br/>
+          <%= link_to "Filmed interviews" %><br/>
+          <%= link_to "Nonfiction films" %><br/>
+        </dd>
+        <dt>Contributors:</dt>
+         <dd>
+          <%= link_to "King, Ben E." %><br/>
+          <%= link_to "Kahn, Ashley" %><br/>
+          <%= link_to "Rock and Roll Hall of Fame Foundation" %><br/>
+        </dd>
+        <dt>OCLC No.:</dt>
+        <dd>rrhof:3519</dd>
+      </dl>
 
     </div>
   
   </div>
 
-</div>
 </div>
