@@ -1,40 +1,86 @@
-$navbarInverseBackground: #1f0101;
-$navbarInverseBackgroundHighlight: #590000;
-$navbarHeight: 40px;
-$linkColor: #ac1313;
-$linkColorHover: #7d0e0e;
-//$navbarText: #ffffff;
-//$navbarLinkColor: #ffffff;
-//$navbarLinkColorHover: #cccccc;
-$navbarInverseLinkBackgroundHover: #590000;
+// Catalog stylesheet
+
+// -----------------------------------------------------
+// Variables and settings
+// -----------------------------------------------------
+
+// Defing our reds and other colors
+$catalog-darker-red:  #1f0101;
+$catalog-dark-red:    #7d0e0e;
+$catalog-red:         #590000;
+$catalog-light-red:   #ac1313;
+
+// Asign bootstrap's colors to ours
+$brand-primary:                 $catalog-red;
+$link-color:                    $catalog-light-red;
+$navbar-inverse-bg:             $catalog-darker-red;
+$navbar-inverse-link-hover-bg:  $catalog-red;
+$dropdown-link-hover-bg:        $catalog-light-red;
+$dropdown-link-hover-color:     #ffffff;
+
+// Other settings
+$navbar-height: 40px;
+
+// -----------------------------------------------------
+// Heere begineth the sass
+// -----------------------------------------------------
 
 @import "bootstrap";
-@import "bootstrap-responsive";
 
-#main {
-  padding: 10px 50px 10px 50px;
+// Bootstrap overrides
+
+h1, h2, h3 {
+  margin-top: 10px;
 }
 
 .navbar-inverse { 
-  .navbar-top {
-    background-color: #cccccc;
-    background-image: image-url("navbar_swatch.png");
-    border-bottom-color: $navbarInverseBackground;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
+  @include gradient-vertical($catalog-red, $catalog-darker-red);
+  border-bottom-color: $catalog-darker-red;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+}
+
+.navbar-default { 
+  @include gradient-vertical(lighten($gray-lighter, 15%), $gray-lighter);
+  border-bottom-color: $gray-light;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+a.glyphicon {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
   }
 }
 
-.navbar-title {
-  color: white;
-  font-size: 40px;
-  line-height: 40px;
-  padding: 12px 0px 12px 0px;
+// Bootstrap v2 styled stacked nav tabs
+
+.nav-tabs.nav-stacked {
+  border-bottom: 0;
+}
+.nav-tabs.nav-stacked > li > a {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.nav-tabs.nav-stacked > li:first-child > a {
+  @include border-top-radius(4px);
+}
+.nav-tabs.nav-stacked > li:last-child > a {
+  @include border-bottom-radius(4px);
+}
+.nav-tabs.nav-stacked > li > a:hover {
+  border-color: #ddd;
+  z-index: 2;
 }
 
-.carousel-inner {
-  background: #bbb;
+.nav-stacked > li + li {
+  margin-top: 0px;
 }
+
+// Get sassy here....
 
 .inline {
   display: inline;
@@ -44,8 +90,11 @@ $navbarInverseLinkBackgroundHover: #590000;
   display: block;
 }
 
-.well-inverse {
+.white {
+  color: #ffffff;
+}
 
+.well-inverse {
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #000;
@@ -53,5 +102,39 @@ $navbarInverseLinkBackgroundHover: #590000;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
 
+.child-component {
+  padding-left: 20px;
+}
+
+#header {
+  background-image: image-url("header_tile_bg.png");
+  background-repeat: repeat-x;
+  height: 85px;
+  width: 100%;
+}
+
+#main {
+  margin-top: 20px;
+}
+
+#footer {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+// Mobile screen
+
+@media (max-width: $screen-sm) {
+  .navbar-default {
+    margin-bottom: 20px;
+    min-height: 5px;
+  }
+  .navbar-inverse {
+    margin-bottom: 0px;
+  }
+  #main{
+    margin-top: 0px;
+  }
 }

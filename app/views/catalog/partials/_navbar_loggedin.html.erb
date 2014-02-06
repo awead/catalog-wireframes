@@ -1,45 +1,57 @@
-<div class="navbar navbar-inverse navbar-static-top">
-  <div class="navbar-top">
-    <div class="container-fluid">
-      <%= image_tag "logo.png", :size => "75x49", :class => "brand" %>
-      <div class="navbar-title hidden-phone">Rock and Roll Hall of Fame Library + Archives</div>
-    </div>
-  </div>
-  <div class="navbar-inner">
-    <div class="container-fluid pull-left">
-      <form class="navbar-form pull-left">
-        <input type="text" class="search-query" value="Elvis">
-        <select class="span2">
-          <option>All fields</option>
-          <option>Title</option>
-          <option>Author</option>
-          <option>Keyword</option>
-          <option>Call number</option>
-        </select>
-      </form>
-    </div>
-    <div class="container-fluid pull-right">
-      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<%= render "catalog/partials/header" %>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container navbar-container">
+    <!-- Toggle button to show menu on mobile device -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#catalog_navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-question-sign white"></span>
       </button>
-      <div class="nav-collapse collapse">
-        <ul class="nav">
-          <li><a href="#">Search History</a></li>
-          <li><a href="#">Start Over</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Bookmark all</a></li>
-              <li><a href="#">View bookmarkds</a></li>
-              <li><a href="#">Manage my account</a></li>
-              <li class="divider"></li>
-              <li><a href="#">Logout</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#record_controls">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-info-sign white"></span>
+      </button>    
+
+      <!-- use the extra space when we're on a phone -->
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-circle-arrow-right white"></span>
+      </button>
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-circle-arrow-up white"></span>
+      </button>
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="glyphicon glyphicon-circle-arrow-left white"></span>
+      </button>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="catalog_navbar">
+      <!-- search form -->
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <!-- menu items on the right -->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Search History</a></li>
+        <li><a href="#">Start Over</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Bookmark all</a></li>
+            <li><a href="#">View bookmarks</a></li>
+            <li><a href="#">Manage my account</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+</nav>

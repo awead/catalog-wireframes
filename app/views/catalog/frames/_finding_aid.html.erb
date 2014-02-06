@@ -1,11 +1,7 @@
-<%= render :partial => "/catalog/partials/navbar_loggedin" %>
-
 <div class="hidden">
   <%= next_frame "archival_series_1" %>
   <%= previous_frame "book" %>
 </div>
-
-<div class="container-fluid" id="main">
 
 <div class="alert alert-info fade in">
   <button type="button" class="close" data-dismiss="alert">×</button>
@@ -15,232 +11,224 @@
   </p>
 </div>
 
-<div class="row-fluid">
+<%= render :partial => "/catalog/partials/record_controls" %>
 
-  <%= render :partial => "/catalog/partials/record_controls" %>
-
-  <div class="row-fluid">
-
-    <div class="span2">
-      <ul class="nav nav-tabs nav-stacked">
-        <li class="active"><a href="#summary" data-toggle="tab">Summary</a></li>
-        <li><a href="#description" data-toggle="tab">Description</a></li>
-        <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
-        <li><a href="#subjects" data-toggle="tab">Find More</a></li>
-        <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
-      </ul>
-    </div>
-    
-    <div class="span10">
-      <h3>
-        <%= image_tag "icons/archival_collection.png" %>
-        Guide to the Herb Staehr Collection
-        <small>ARC.0029</small>
-      </h3>
-      <div class="tab-content">
-        
-        <!-- tab: general information and collection overview -->
-        <div class="tab-pane active" id="summary">
-          <legend>General Information</legend>
-          <dl class="dl-horizontal">
-            <dt>Title:</dt>
-            <dd>Herb Staehr Collection</dd>
-            <dt>Dates:</dt>
-            <dd>Inclusive, circa 1950-2007</dd>
-            <dt>Extent:</dt>
-            <dd>
-              135.75 Linear feet (4 records cartons, 1 Hollinger box, 1 flat box, 114 audiovisual boxes, 7 binders, 1 shared 
-              flat file drawer)
-            </dd>
-            <dt>Language:</dt>
-            <dd>
-              Collection is primarily in English; materials in French, German, Dutch, Italian, Danish, Japanese, and Swedish 
-              can be found in clippings in Series I and Series II and in video from Series VI. Languages other than English 
-              are noted at the Subseries and item level.
-            </dd>
-            <dt>Processing Information:</dt>
-            <dd>
-              Processed by Christine Borne, Project Archivist, and James A. Kohler, Project Archivist. Completed July 27,
-              2012. Revised by Dianna Ford, Audiovisual Archivist. Last updated April 4, 2013. Descriptive sources and
-              standards used to create this inventory: DACS and local processing manual.
-            </dd>
-            <dt>Preferred Citation:</dt>
-            <dd>[Identification of Item], Herb Staehr Collection, Library and Archives, Rock and Roll Hall of Fame and Museum.</dd>
-          </dl>          
-          <legend>Collection Overview</legend>
-          <p>
-            The Herb Staehr Collection spans the years circa 1950 to 2007, with the bulk of the material dating between
-            1968 and 2007. It comprises 138 linear feet of material mainly related to Alvin Lee, Ten Years After, and
-            Eric Clapton, but also to a variety of artists active during the mid-1960s to mid-2000s. Staehr, author of
-            Alvin Lee & Ten Years After: Visual History, was the preeminent collector of Alvin Lee and Ten Years After
-            memorabilia. The bulk of the collection consists of bootleg concert recordings, with some papers,
-            scrapbooks, and photographic material. The collection is divided into seven series: papers, scrapbooks,
-            photographs, slides, negatives, concert recordings, and contact sheets. The collection will be valuable to
-            researchers interested in the history of Ten Years After, English blues-rock, and Woodstock, as well to
-            those looking for images of Eric Clapton or Alvin Lee, and viewing or listening to performances that have
-            not been commercially released.  
-          </p>
-        </div>
-
-        <!-- tab: bio, sep materials, history -->
-        <div class="tab-pane" id="description">
-          <legend>Biographical Information</legend>
-          <dl class="dl-horizontal">
-            <dt>1949</dt>
-            <dd>Herb Staehr born in Hartford, Connecticut.</dd>
-            <dt>1969</dt>
-            <dd>Attends the Woodstock Festival, where he first hears Ten Years After.</dd>
-            <dt>2001</dt>
-            <dd>Publishes Alvin Lee and Ten Years After: A Visual History.</dd>
-            <dt>2008</dt>
-            <dd>Dies of cancer.</dd>
-          </dl>
-          <p>
-            Herb Staehr was a collector of photographs and memorabilia related to the English blues-rock band Ten Years
-            After, who performed at Woodstock in 1969. He was the author of Alvin Lee and Ten Years After: A Visual
-            History, regarded as the definitive work on the band.
-          </p>
-          <h6>Sources</h6>
-          <p>
-            "Tribute to Herb Staehr -- Historian of the Band Ten Years After." Ten Years After. 
-            Accessed May 13, 2011. http://www.ten-years-after.com/herb/tribute.htm.
-          </p>
-          <legend>Separated Materials</legend>
-          <p>
-            Commercially released CDs, videocassettes, and audiocassettes have been transferred to the library collection.
-            Please search for the "Herb Staehr Collection" in the library catalog for a list of donated titles. If you are
-            unable to find what you are looking for, consult the Library and Archives staff to ensure these materials are
-            available.
-          </p>
-          <legend>Custodial History</legend>
-          <p>
-            The Herb Staehr Collection was received by the Rock and Roll Hall of Fame and Museum, Inc. as a gift from Thomas
-            W. and Claudia Staehr on December 8, 2008.
-          </p>
-        </div>
-
-        <!-- tab: restrictions -->
-        <div class="tab-pane" id="restrictions">
-          <legend>Restrictions</legend>
-          <h6>Use</h6>
-          <p>
-            The Rock and Roll Hall of Fame and Museum, Inc. has a limited copyright license to the materials within this collection.
-            The transfer of Donor's literary and other property rights does not include works of other individuals and organizations
-            contained in the gift. For more information, please consult the staff of the Library and Archives.
-          </p>
-          <h6>Access</h6>
-          <p>
-            Collection is open for research. Patrons must sign the Acknowledgment of Legal Responsibility and Privacy Rights
-            statement on the Researcher Registration form before using this collection. The condition of some of these materials has
-            not yet been determined for playback purposes. Some of the audiovisual materials in the collection are on defunct media
-            formats and, therefore, are RESTRICTED. Access copies of these materials may have to be created prior to use. Consult
-            the Library and Archives staff in advance of your visit to ensure access to these materials is available.
-          </p>
-        </div>
-
-        <!-- tab: subject headings -->
-        <div class="tab-pane" id="subjects">
-          <legend>Search Collection</legend>
-          <p>Search for individual items within this collection.</p>
-
-          <form action="/" class="form-search">
-            <input autofocus="autofocus" class="search-query" id="q" name="q" type="text">
-            <button class="btn" name="button">Search Collection</button>
-          </form>
-
-          <legend>Subject Headings</legend>
-          <p>Click on the links below to see more items in the catalog on these topics.</p>
-          <dl class="dl-horizontal">
-            <dt>Name:</dt>
-            <dd>
-              <%= link_to "Berry, Chuck" %><br/>
-              <%= link_to "Clapton, Eric" %><br/>
-              <%= link_to "Collins, Judy, 1939-" %><br/>
-              <%= link_to "Cream (Musical group)" %><br/>
-              <%= link_to "Gladys Knight and the Pips" %><br/>
-              <%= link_to "Hendrix, Jimi" %><br/>
-              <%= link_to "Joplin, Janis" %><br/>
-              <%= link_to "King, B.B." %><br/>
-              <%= link_to "Led Zeppelin (Musical group)" %><br/>
-              <%= link_to "Lee, Alvin" %><br/>
-              <%= link_to "Library and Archives" %><br/>
-              <%= link_to "Muddy Waters, 1915-1983" %><br/>
-              <%= link_to "Page, Jimmy" %><br/>
-              <%= link_to "Rolling Stones" %><br/>
-              <%= link_to "Santana (Musical group)" %><br/>
-              <%= link_to "Staehr, Herb" %><br/>
-              <%= link_to "Ten Years After (Musical group)" %><br/>
-              <%= link_to "Vaughan, Stevie Ray." %><br/>
-              <%= link_to "Winter, Johnny" %><br/>
-              <%= link_to "Yardbirds (Musical group)" %><br/>
-            </dd> 
-            <dt>Subjects:</dt>
-            <dd>
-              <%= link_to "Blues" %>--<%= link_to "rock music" %>
-            </dd>
-            <dt>Genre:</dt>
-            <dd>
-              <%= link_to "Audiocassettes" %><br/>
-              <%= link_to "Collectibles" %><br/>
-              <%= link_to "Compact discs" %><br/>
-              <%= link_to "DVD-Video discs" %><br/>
-              <%= link_to "Ephemera" %><br/>
-              <%= link_to "Negatives (photographic)" %><br/>
-              <%= link_to "Photographs" %><br/>
-              <%= link_to "Printed ephemera" %><br/>
-              <%= link_to "Scrapbooks" %><br/>
-              <%= link_to "Slides (Photography)" %><br/>
-              <%= link_to "Videocassettes" %><br/>
-            </dd>
-          </dl>
-        </div>
-
-        <!-- tab: inventory -->
-        <div class="tab-pane" id="inventory">
-          <h4>Collection Inventory</h4>
-          <table id="inventory_table" class="table table-condensed table-striped table-hover">
-            <tr><th>Item</th><th>Location</th></tr>
-            <tr><td><%= link_to "Series I: Papers, circa 1970s-2007, undated" %></td></tr>
-            <tr><td><%= link_to "Series II: Scrapbooks, circa 1950-2006" %></td></tr>
-            <tr><td><%= link_to "Series III: Photographs, circa 1960s-2000" %></td></tr>
-            <tr><td><%= link_to "Series IV: Slides, circa 1968-2000" %></td></tr>
-            <tr><td><%= link_to "Series V: Negatives, circa 1968-2000" %></td></tr>
-            <tr><td><%= link_to "Series VI: Concert, Studio, and Television Recordings [RESTRICTED], circa 1960s-2000s" %></td></tr>
-            <tr><td><%= link_to "Series VII: Contact Sheets, 1968-1977, 2002, undated" %></td></tr>
-          </table>
-
-          <div id="lastPostsLoader"></div>
-
-
-<script type="text/javascript">
-$(document).ready(function(){
-    function lastAddedLiveFunc()
-    {
-      var row = '<tr><td><%= link_to "Another item" %></td></tr>';
-      $('#inventory_table').append(row);
-        
-    };
-
-    //lastAddedLiveFunc();
-    $(window).scroll(function(){
-
-        var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
-        var  scrolltrigger = 0.95;
-
-        if  ((wintop/(docheight-winheight)) > scrolltrigger) {
-         //console.log('scroll bottom');
-         lastAddedLiveFunc();
-        }
-    });
-});
-</script>
-
-        </div>
-
-      </div>
-    </div>
-  
-  </div>
-
+<div class="col-sm-4 col-md-3 col-lg-2">
+  <ul class="nav nav-tabs nav-stacked">
+    <li class="active"><a href="#summary" data-toggle="tab">Summary</a></li>
+    <li><a href="#description" data-toggle="tab">Description</a></li>
+    <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
+    <li><a href="#subjects" data-toggle="tab">Find More</a></li>
+    <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
+  </ul>
 </div>
+    
+<div class="col-sm-8 col-md-9 col-lg-10">
+
+  <h3>
+    <%= image_tag "icons/archival_collection.png" %>
+    Guide to the Herb Staehr Collection
+    <small>ARC.0029</small>
+  </h3>
+    
+  <div class="tab-content">
+    <!-- tab: general information and collection overview -->
+    <div class="tab-pane fade in active" id="summary">
+      <legend>General Information</legend>
+      <dl class="dl-horizontal">
+        <dt>Title:</dt>
+        <dd>Herb Staehr Collection</dd>
+        <dt>Dates:</dt>
+        <dd>Inclusive, circa 1950-2007</dd>
+        <dt>Extent:</dt>
+        <dd>
+          135.75 Linear feet (4 records cartons, 1 Hollinger box, 1 flat box, 114 audiovisual boxes, 7 binders, 1 shared 
+          flat file drawer)
+        </dd>
+        <dt>Language:</dt>
+        <dd>
+          Collection is primarily in English; materials in French, German, Dutch, Italian, Danish, Japanese, and Swedish 
+          can be found in clippings in Series I and Series II and in video from Series VI. Languages other than English 
+          are noted at the Subseries and item level.
+        </dd>
+        <dt>Processing Information:</dt>
+        <dd>
+          Processed by Christine Borne, Project Archivist, and James A. Kohler, Project Archivist. Completed July 27,
+          2012. Revised by Dianna Ford, Audiovisual Archivist. Last updated April 4, 2013. Descriptive sources and
+          standards used to create this inventory: DACS and local processing manual.
+        </dd>
+        <dt>Preferred Citation:</dt>
+        <dd>[Identification of Item], Herb Staehr Collection, Library and Archives, Rock and Roll Hall of Fame and Museum.</dd>
+      </dl>          
+      <legend>Collection Overview</legend>
+      <p>
+        The Herb Staehr Collection spans the years circa 1950 to 2007, with the bulk of the material dating between
+        1968 and 2007. It comprises 138 linear feet of material mainly related to Alvin Lee, Ten Years After, and
+        Eric Clapton, but also to a variety of artists active during the mid-1960s to mid-2000s. Staehr, author of
+        Alvin Lee & Ten Years After: Visual History, was the preeminent collector of Alvin Lee and Ten Years After
+        memorabilia. The bulk of the collection consists of bootleg concert recordings, with some papers,
+        scrapbooks, and photographic material. The collection is divided into seven series: papers, scrapbooks,
+        photographs, slides, negatives, concert recordings, and contact sheets. The collection will be valuable to
+        researchers interested in the history of Ten Years After, English blues-rock, and Woodstock, as well to
+        those looking for images of Eric Clapton or Alvin Lee, and viewing or listening to performances that have
+        not been commercially released.  
+      </p>
+    </div>
+
+    <!-- tab: bio, sep materials, history -->
+    <div class="tab-pane fade" id="description">
+      <legend>Biographical Information</legend>
+      <dl class="dl-horizontal">
+        <dt>1949</dt>
+        <dd>Herb Staehr born in Hartford, Connecticut.</dd>
+        <dt>1969</dt>
+        <dd>Attends the Woodstock Festival, where he first hears Ten Years After.</dd>
+        <dt>2001</dt>
+        <dd>Publishes Alvin Lee and Ten Years After: A Visual History.</dd>
+        <dt>2008</dt>
+        <dd>Dies of cancer.</dd>
+      </dl>
+      <p>
+        Herb Staehr was a collector of photographs and memorabilia related to the English blues-rock band Ten Years
+        After, who performed at Woodstock in 1969. He was the author of Alvin Lee and Ten Years After: A Visual
+        History, regarded as the definitive work on the band.
+      </p>
+      <h6>Sources</h6>
+      <p>
+        "Tribute to Herb Staehr -- Historian of the Band Ten Years After." Ten Years After. 
+        Accessed May 13, 2011. http://www.ten-years-after.com/herb/tribute.htm.
+      </p>
+      <legend>Separated Materials</legend>
+      <p>
+        Commercially released CDs, videocassettes, and audiocassettes have been transferred to the library collection.
+        Please search for the "Herb Staehr Collection" in the library catalog for a list of donated titles. If you are
+        unable to find what you are looking for, consult the Library and Archives staff to ensure these materials are
+        available.
+      </p>
+      <legend>Custodial History</legend>
+      <p>
+        The Herb Staehr Collection was received by the Rock and Roll Hall of Fame and Museum, Inc. as a gift from Thomas
+        W. and Claudia Staehr on December 8, 2008.
+      </p>
+    </div>
+
+    <!-- tab: restrictions -->
+    <div class="tab-pane fade" id="restrictions">
+      <legend>Restrictions</legend>
+      <h6>Use</h6>
+      <p>
+        The Rock and Roll Hall of Fame and Museum, Inc. has a limited copyright license to the materials within this collection.
+        The transfer of Donor's literary and other property rights does not include works of other individuals and organizations
+        contained in the gift. For more information, please consult the staff of the Library and Archives.
+      </p>
+      <h6>Access</h6>
+      <p>
+        Collection is open for research. Patrons must sign the Acknowledgment of Legal Responsibility and Privacy Rights
+        statement on the Researcher Registration form before using this collection. The condition of some of these materials has
+        not yet been determined for playback purposes. Some of the audiovisual materials in the collection are on defunct media
+        formats and, therefore, are RESTRICTED. Access copies of these materials may have to be created prior to use. Consult
+        the Library and Archives staff in advance of your visit to ensure access to these materials is available.
+      </p>
+    </div>
+
+    <!-- tab: subject headings -->
+    <div class="tab-pane fade" id="subjects">
+      <legend>Search Collection</legend>
+      <p>Search for individual items within this collection.</p>
+
+      <form action="/" class="form-search">
+        <input autofocus="autofocus" class="search-query" id="q" name="q" type="text">
+        <button class="btn" name="button">Search Collection</button>
+      </form>
+
+      <legend>Subject Headings</legend>
+      <p>Click on the links below to see more items in the catalog on these topics.</p>
+      <dl class="dl-horizontal">
+        <dt>Name:</dt>
+        <dd>
+          <%= link_to "Berry, Chuck" %><br/>
+          <%= link_to "Clapton, Eric" %><br/>
+          <%= link_to "Collins, Judy, 1939-" %><br/>
+          <%= link_to "Cream (Musical group)" %><br/>
+          <%= link_to "Gladys Knight and the Pips" %><br/>
+          <%= link_to "Hendrix, Jimi" %><br/>
+          <%= link_to "Joplin, Janis" %><br/>
+          <%= link_to "King, B.B." %><br/>
+          <%= link_to "Led Zeppelin (Musical group)" %><br/>
+          <%= link_to "Lee, Alvin" %><br/>
+          <%= link_to "Library and Archives" %><br/>
+          <%= link_to "Muddy Waters, 1915-1983" %><br/>
+          <%= link_to "Page, Jimmy" %><br/>
+          <%= link_to "Rolling Stones" %><br/>
+          <%= link_to "Santana (Musical group)" %><br/>
+          <%= link_to "Staehr, Herb" %><br/>
+          <%= link_to "Ten Years After (Musical group)" %><br/>
+          <%= link_to "Vaughan, Stevie Ray." %><br/>
+          <%= link_to "Winter, Johnny" %><br/>
+          <%= link_to "Yardbirds (Musical group)" %><br/>
+        </dd> 
+        <dt>Subjects:</dt>
+        <dd>
+          <%= link_to "Blues" %>--<%= link_to "rock music" %>
+        </dd>
+        <dt>Genre:</dt>
+        <dd>
+          <%= link_to "Audiocassettes" %><br/>
+          <%= link_to "Collectibles" %><br/>
+          <%= link_to "Compact discs" %><br/>
+          <%= link_to "DVD-Video discs" %><br/>
+          <%= link_to "Ephemera" %><br/>
+          <%= link_to "Negatives (photographic)" %><br/>
+          <%= link_to "Photographs" %><br/>
+          <%= link_to "Printed ephemera" %><br/>
+          <%= link_to "Scrapbooks" %><br/>
+          <%= link_to "Slides (Photography)" %><br/>
+          <%= link_to "Videocassettes" %><br/>
+        </dd>
+      </dl>
+    </div>
+
+    <!-- tab: inventory -->
+    <div class="tab-pane fade" id="inventory">
+      <h4>Collection Inventory</h4>
+      <table id="inventory_table" class="table table-condensed table-striped table-hover">
+        <tr><th>Item</th><th>Location</th></tr>
+        <tr><td><%= link_to "Series I: Papers, circa 1970s-2007, undated" %></td></tr>
+        <tr><td><%= link_to "Series II: Scrapbooks, circa 1950-2006" %></td></tr>
+        <tr><td><%= link_to "Series III: Photographs, circa 1960s-2000" %></td></tr>
+        <tr><td><%= link_to "Series IV: Slides, circa 1968-2000" %></td></tr>
+        <tr><td><%= link_to "Series V: Negatives, circa 1968-2000" %></td></tr>
+        <tr><td><%= link_to "Series VI: Concert, Studio, and Television Recordings [RESTRICTED], circa 1960s-2000s" %></td></tr>
+        <tr><td><%= link_to "Series VII: Contact Sheets, 1968-1977, 2002, undated" %></td></tr>
+      </table>
+
+      <div id="lastPostsLoader"></div>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+            function lastAddedLiveFunc()
+            {
+              var row = '<tr><td><%= link_to "Another item" %></td></tr>';
+              $('#inventory_table').append(row);
+                
+            };
+        
+            //lastAddedLiveFunc();
+            $(window).scroll(function(){
+        
+                var wintop = $(window).scrollTop(), docheight = $(document).height(), winheight = $(window).height();
+                var  scrolltrigger = 0.95;
+        
+                if  ((wintop/(docheight-winheight)) > scrolltrigger) {
+                 //console.log('scroll bottom');
+                 lastAddedLiveFunc();
+                }
+            });
+        });
+      </script>
+
+    </div>
+
+  </div>
+  
 </div>
