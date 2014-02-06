@@ -20,13 +20,14 @@ $dropdown-link-hover-color:     #ffffff;
 
 // Other settings
 $navbar-height: 40px;
-//$navbar-margin-bottom: 0px;
 
 // -----------------------------------------------------
 // Heere begineth the sass
 // -----------------------------------------------------
 
 @import "bootstrap";
+
+// Bootstrap overrides
 
 h1, h2, h3 {
   margin-top: 10px;
@@ -53,6 +54,34 @@ a.glyphicon {
   }
 }
 
+// Bootstrap v2 styled stacked nav tabs
+
+.nav-tabs.nav-stacked {
+  border-bottom: 0;
+}
+.nav-tabs.nav-stacked > li > a {
+  border: 1px solid #ddd;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+          border-radius: 0;
+}
+.nav-tabs.nav-stacked > li:first-child > a {
+  @include border-top-radius(4px);
+}
+.nav-tabs.nav-stacked > li:last-child > a {
+  @include border-bottom-radius(4px);
+}
+.nav-tabs.nav-stacked > li > a:hover {
+  border-color: #ddd;
+  z-index: 2;
+}
+
+.nav-stacked > li + li {
+  margin-top: 0px;
+}
+
+// Get sassy here....
+
 .inline {
   display: inline;
 }
@@ -66,7 +95,6 @@ a.glyphicon {
 }
 
 .well-inverse {
-
   color: white;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
   background-color: #000;
@@ -74,7 +102,6 @@ a.glyphicon {
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-
 }
 
 #header {
@@ -92,6 +119,8 @@ a.glyphicon {
   margin-top: 20px;
   margin-bottom: 0px;
 }
+
+// Mobile screen
 
 @media (max-width: $screen-sm) {
   .navbar-default {
