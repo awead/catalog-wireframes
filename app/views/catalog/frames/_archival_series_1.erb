@@ -16,86 +16,83 @@
 
 <%= render :partial => "/catalog/partials/record_controls" %>
 
-<div class="col-xs-12">
-
-  <div class="col-sm-4 col-md-3 col-lg-2">
-    <ul class="nav nav-tabs nav-stacked">
-      <li><a href="#summary" data-toggle="tab">Summary</a></li>
-      <li><a href="#description" data-toggle="tab">Description</a></li>
-      <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
-      <li><a href="#subjects" data-toggle="tab">Find More</a></li>
-      <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
-    </ul>
-  </div>
+<div class="col-sm-4 col-md-3 col-lg-2">
+  <ul class="nav nav-tabs nav-stacked">
+    <li><a href="#summary" data-toggle="tab">Summary</a></li>
+    <li><a href="#description" data-toggle="tab">Description</a></li>
+    <li><a href="#restrictions" data-toggle="tab">Restrictions</a></li>
+    <li><a href="#subjects" data-toggle="tab">Find More</a></li>
+    <li><a href="#inventory" data-toggle="tab">Collection Inventory</a></li>
+  </ul>
+</div>
     
-  <div class="col-sm-8 col-md-9 col-lg-10">
-        
-    <ul class="breadcrumb">
-      <li><a href="#">Herb Staehr Collection</a></li>
-      <li class="active">Series I: Papers</li>
-    </ul>
+<div class="col-sm-8 col-md-9 col-lg-10">
+      
+  <ul class="breadcrumb">
+    <li><a href="#">Herb Staehr Collection</a></li>
+    <li class="active">Series I: Papers</li>
+  </ul>
 
-    <h4>Series I: Papers, circa 1970s-2007, undated</h4>
-    <dl class="dl-horizontal">
-      <dt>Scope and Content</dt>
-      <dd>
-        Series I: Papers, which spans circa 1970s to 2007 and includes some undated material, is arranged alphabetically by
-        subject. It mainly consists of Staehr’s correspondence and drafts of his book, Alvin Lee and Ten Years After: A Visual
-        History. Clippings come primarily from, but are not limited to, the Dutch music magazine Muziek Express and contain
-        photographs and some music reviews. The video and audio inventories listed at the end of the series likely correspond to
-        the audiovisuals in the collection.
-      </dd>
-    </dl>
+  <h4>Series I: Papers, circa 1970s-2007, undated</h4>
+  <dl class="dl-horizontal">
+    <dt>Scope and Content</dt>
+    <dd>
+      Series I: Papers, which spans circa 1970s to 2007 and includes some undated material, is arranged alphabetically by
+      subject. It mainly consists of Staehr’s correspondence and drafts of his book, Alvin Lee and Ten Years After: A Visual
+      History. Clippings come primarily from, but are not limited to, the Dutch music magazine Muziek Express and contain
+      photographs and some music reviews. The video and audio inventories listed at the end of the series likely correspond to
+      the audiovisuals in the collection.
+    </dd>
+  </dl>
 
-    <table id="inventory_table" class="table table-condensed table-striped table-hover">
-      <tr><th>Item</th><th>Materials</th></tr>
-      <tr>
-        <td><%= link_to "Biography, Ten Years After, undated" %></td>
-        <td>
-          <span class="block">Box: 1, Folder: 1 <a class="label label-default">Text</a></span>
-        </td>
-      </tr>
-      <tr>
-        <td><%= link_to "Book Web site, undated" %></td>
-        <td>
-          <span class="block">Box: 1, Folder: 2 <a class="label label-default">Text</a></span>
-        </td>
-      </tr>
-      <tr>
-        <td class="tooltips">
-          <%= link_to "Bootleg discographies, Blind Faith and Cream, 1998" %>
-          <a class="glyphicon glyphicon-check" title="Content available online" data-toggle="tooltip" data-placement="right"></a>        
-        </td>
-        <td>
-          <span class="block">Box: 1, Folder: 3 <a class="label label-default">Text</a></span>
-        </td>
-      </tr>
-      <tr><td><%= link_to "Clippings" %></td></tr>
-      <tr><td><%= link_to "Correspondence" %></td></tr>
-      <tr>
-        <td class="tooltips">
-          <%= link_to "Draft, Alvin Lee and Ten Years After: A Visual History, circa 2001" %>
-          <a class="glyphicon glyphicon-check" title="Content available online" data-toggle="tooltip" data-placement="right"></a>
-        </td>
-        <td>
-          <span class="block">Box: 2, Folder: 1-6 <a class="label label-default">Text</a></span>
-          <span class="block">Box: 2, Folder: 7 <a class="label label-default">Graphic Materials</a></span>
-        </td>
-      </tr>
-      <tr>
-        <td><%= link_to "Draft, cover and text copy, Alvin Lee and Ten Years After: A Visual History, circa 2001" %></td>
-        <td>Box: 2, Folder: 7 <a class="label label-default">Text</a></td>
-      </tr>
-      <tr><td><%= link_to "Inventory, Ten Years After videos, undated" %></td><td>Box: 2, Folder: 8 <a class="label label-default">Text</a></td></tr>
-      <tr><td><%= link_to "Page mock-ups, Alvin Lee and Ten Years After, circa 2001" %></td><td>Box: 2, Folder: 9-10 <a class="label label-default">Text</a></td></tr>
-      <tr><td><%= link_to "Research files, miscellaneous, 1998-2000, undated" %></td><td>Box: 2, Folder: 11 <a class="label label-default">Text</a></td></tr>
-      <tr><td><%= link_to "Ten Years After Now tour, 2007" %></td><td>Box: 2, Folder: 12 <a class="label label-default">Text</a></td></tr>
-      <tr><td><%= link_to "Video and audio inventories" %></td></tr>
-      <tr><td><%= link_to "Video list markup, undated" %></td><td>Box: 2, Folder: 15 <a class="label label-default">Text</a></td></tr>
-    </table>
+  <table id="inventory_table" class="table table-condensed table-striped table-hover">
+    <tr><th>Item</th><th>Materials</th></tr>
+    <tr>
+      <td><%= link_to "Biography, Ten Years After, undated" %></td>
+      <td>
+        <span class="block">Box: 1, Folder: 1 <a class="label label-default">Text</a></span>
+      </td>
+    </tr>
+    <tr>
+      <td><%= link_to "Book Web site, undated" %></td>
+      <td>
+        <span class="block">Box: 1, Folder: 2 <a class="label label-default">Text</a></span>
+      </td>
+    </tr>
+    <tr>
+      <td class="tooltips">
+        <%= link_to "Bootleg discographies, Blind Faith and Cream, 1998" %>
+        <a class="glyphicon glyphicon-check" title="Content available online" data-toggle="tooltip" data-placement="right"></a>        
+      </td>
+      <td>
+        <span class="block">Box: 1, Folder: 3 <a class="label label-default">Text</a></span>
+      </td>
+    </tr>
+    <tr><td><%= link_to "Clippings" %></td></tr>
+    <tr><td><%= link_to "Correspondence" %></td></tr>
+    <tr>
+      <td class="tooltips">
+        <%= link_to "Draft, Alvin Lee and Ten Years After: A Visual History, circa 2001" %>
+        <a class="glyphicon glyphicon-check" title="Content available online" data-toggle="tooltip" data-placement="right"></a>
+      </td>
+      <td>
+        <span class="block">Box: 2, Folder: 1-6 <a class="label label-default">Text</a></span>
+        <span class="block">Box: 2, Folder: 7 <a class="label label-default">Graphic Materials</a></span>
+      </td>
+    </tr>
+    <tr>
+      <td><%= link_to "Draft, cover and text copy, Alvin Lee and Ten Years After: A Visual History, circa 2001" %></td>
+      <td>Box: 2, Folder: 7 <a class="label label-default">Text</a></td>
+    </tr>
+    <tr><td><%= link_to "Inventory, Ten Years After videos, undated" %></td><td>Box: 2, Folder: 8 <a class="label label-default">Text</a></td></tr>
+    <tr><td><%= link_to "Page mock-ups, Alvin Lee and Ten Years After, circa 2001" %></td><td>Box: 2, Folder: 9-10 <a class="label label-default">Text</a></td></tr>
+    <tr><td><%= link_to "Research files, miscellaneous, 1998-2000, undated" %></td><td>Box: 2, Folder: 11 <a class="label label-default">Text</a></td></tr>
+    <tr><td><%= link_to "Ten Years After Now tour, 2007" %></td><td>Box: 2, Folder: 12 <a class="label label-default">Text</a></td></tr>
+    <tr><td><%= link_to "Video and audio inventories" %></td></tr>
+    <tr><td><%= link_to "Video list markup, undated" %></td><td>Box: 2, Folder: 15 <a class="label label-default">Text</a></td></tr>
+  </table>
 
-    <div id="lastPostsLoader"></div>
-
+  <div id="lastPostsLoader"></div>
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -120,6 +117,4 @@ $(document).ready(function(){
 });
 </script>
 
-  </div>
-  
 </div>
